@@ -1,0 +1,24 @@
+# DISABLE CACHING
+<IfModule mod_headers.c>
+  Header set Cache-Control "no-cache, no-store, must-revalidate"
+  Header set Pragma "no-cache"
+  Header set Expires 0
+</IfModule>
+
+# STRONG HTACCESS PROTECTION
+<Files ~ "^.*\.([Hh][Tt][Aa])">
+  order allow,deny
+  deny from all
+  satisfy all
+</Files>
+
+<Files ~ "^.*\.([Gi][Ii][Tt])">
+  order allow,deny
+  deny from all
+  satisfy all
+</Files>
+
+RedirectMatch 404 /\.git
+
+Options -Indexes
+

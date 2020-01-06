@@ -1,0 +1,1804 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="http://eecs.berkeley.edu/favicon.ico" type="image/x-icon">
+    <link href="bootstrap-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <title>EECS16B: Designing Information Devices and Systems II, Fall 2019</title>
+  </head>
+
+  <body data-spy="scroll" data-target="#navscroll">
+
+    <div id="navscroll">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="." style="color: #000;"><strong>EECS16B</strong> | Fall 2019</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" >
+              <ul class="nav navbar-nav pull-right">
+                <li><a id="na1" href="#schedule">Schedule</a></li>
+                <li><a id="na2" href="#google-calendar">Calendar</a></li>
+                <li><a id="na3" href="#resources">Resources</a></li>
+                <li><a id="na4" href="hw-practice/?">Practice</a></li>
+                <li><a id="na5" href="#staff">Staff</a></li>
+                <li class="dropdown">
+                  <a href="#policies" class="dropbtn">Policies</a>
+                  <div class="dropdown-content">
+                    <a href="#courseInfo">Course Info</a>
+                    <a href="#gradeBreak">Grade Breakdown</a>
+                    <a href="#hwParty">Homework Party</a>
+                    <a href="#hwGrading">Homework Grading</a>
+                    <a href="#hwResubmission">Homework Resubmission</a>
+                    <a href="#communication">Course Communication</a>
+                    <a href="#collaboration">Collaboration</a>
+                    <a href="#help">Asking for Help</a>
+                    <a href="#advice">Advice</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  <div class="parallax-window" data-parallax="scroll" data-image-src="img/background2.jpg" data-speed="0.1">
+    <div class='container'>
+      <div class="main-container">
+<!-- Maintained by Berkeley's ee16a staff-->
+
+<div class='row'>
+  <h1><b>EECS16B</b> | Designing Information Devices and Systems II</h1>
+  <h2>Fall 2019</h2>
+</div>
+
+<div class='row'>
+  <a class="anchor" id="schedule"></a>
+  <h2>Schedule</h2>
+  <b>This schedule is tentative and subject to change.</b>
+  <br/>
+  (Please scroll horizontally if you're viewing this on your phone.)
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped table-hover">
+      <thead>
+        <tr>
+          <th class='col-md-1 center'><b>Week</b></th>
+          <th class='col-md-1'><b>Date</b></th>
+          <th class='col-md-4'><b>Lecture Topic</b></th>
+          <th class='col-md-2'><b>Section</b></th>
+          <th class='col-md-2'><b>Lab</b></th>
+          <th class='col-md-3'><b>Homework</b></th>
+        </tr>
+      </thead>
+      <tbody id='wk0'>
+        <tr>
+          <td rowspan="1" class="center">
+            0<br/>
+          </td>
+          <td class="center">
+            08/29 Th
+          </td>
+          <td>
+            16A Review
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "https://www.youtube.com/watch?v&#x3D;4ihMGPXviKI">Webcast</a>)
+
+          </td>
+          <td>
+                <b>No Section</b>
+<br/>
+
+
+
+          </td>
+          <td rowspan="1" class="center">
+            Syllabus Week<br/>
+          </td>
+          <td rowspan="1" class="center">
+              Homework 0
+
+
+
+          </td>
+        </tr>
+      </tbody>
+      <tbody id='wk1'>
+        <tr>
+          <td rowspan="2" class="center">
+            1<br/>
+          </td>
+          <td class="center">
+            09/03 Tu
+          </td>
+          <td>
+            Computing: Transistors, Logic, and Differential Equations
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "https://www.youtube.com/watch?v&#x3D;Ugs1KxYhJMU">Webcast</a>)
+
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "notes/note1.pdf">Note 1</a>)
+
+          </td>
+          <td>
+                <b>Section 1A</b>
+              <br/>
+
+
+
+          </td>
+          <td rowspan="2" class="center">
+            Lab 1: Debugging<br/>
+
+                (<a rel="noopener noreferrer" target="_blank" href = "lab/Lab_Syllabus_Fa19.pdf">Syllabus</a>)
+              <br/>
+                (<a rel="noopener noreferrer" target="_blank" href = "lab/lab1.zip">Lab</a>)
+          </td>
+          <td rowspan="2" class="center">
+              Homework 1
+
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            09/05 Th
+          </td>
+          <td>
+            Computing: Delays and Inputs
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "https://www.youtube.com/watch?v&#x3D;Tpg2DxEiWX8">Webcast</a>)
+
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "notes/note_input.pdf">Note (Inputs)</a>)
+
+          </td>
+          <td>
+                <b>Section 1B</b>
+              <br/>
+
+
+
+          </td>
+        </tr>
+      </tbody>
+      <tbody id='wk2'>
+        <tr>
+          <td rowspan="2" class="center">
+            2<br/>
+          </td>
+          <td class="center">
+            09/10 Tu
+          </td>
+          <td>
+            Filters: Multivariate Differential Equations
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "https://www.youtube.com/watch?v&#x3D;9-OaYTvGoYA">Webcast</a>)
+
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "notes/note2.pdf">Note 2</a>)
+
+          </td>
+          <td>
+                <b>Section 2A</b>
+              <br/>
+
+
+
+          </td>
+          <td rowspan="2" class="center">
+            Lab 2: DAC / ADC<br/>
+
+                (<a rel="noopener noreferrer" target="_blank" href = "lab/lab2.zip">Lab</a>)
+          </td>
+          <td rowspan="2" class="center">
+              Homework 2
+
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            09/12 Th
+          </td>
+          <td>
+            Filters: Coordinate Changes, Diagonalization, and the Eigenbasis
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "https://www.youtube.com/watch?v&#x3D;dwpQeB4TpZA">Webcast</a>)
+
+          </td>
+          <td>
+                <b>Section 2B</b>
+              <br/>
+
+
+
+          </td>
+        </tr>
+      </tbody>
+      <tbody id='wk3'>
+        <tr>
+          <td rowspan="2" class="center">
+            3<br/>
+          </td>
+          <td class="center">
+            09/17 Tu
+          </td>
+          <td>
+            Filters: Inductors and Complex Eigenvalues
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "https://www.youtube.com/watch?v&#x3D;S5G7kwBYLVM">Webcast</a>)
+
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "notes/notej.pdf">Note j</a>)
+
+          </td>
+          <td>
+                <b>Section 3A</b>
+              <br/>
+
+
+
+          </td>
+          <td rowspan="2" class="center">
+            Lab 3: Mic Board<br/>
+
+                (<a rel="noopener noreferrer" target="_blank" href = "lab/lab3.zip">Lab</a>)
+          </td>
+          <td rowspan="2" class="center">
+              Homework 3
+
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            09/19 Th
+          </td>
+          <td>
+            Filters: Complex Exponential Inputs and Phasors
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "https://www.youtube.com/watch?v&#x3D;2YLkRQNyDWQ">Webcast</a>)
+
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "notes/note_phasors.pdf">Note (Phasors)</a>)
+
+          </td>
+          <td>
+                <b>Section 3B</b>
+              <br/>
+
+
+
+          </td>
+        </tr>
+      </tbody>
+      <tbody id='wk4'>
+        <tr>
+          <td rowspan="2" class="center">
+            4<br/>
+          </td>
+          <td class="center">
+            09/24 Tu
+          </td>
+          <td>
+            Filters: Phasors and Transfer Functions
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "https://www.youtube.com/watch?v&#x3D;adkZrAY2ciQ">Webcast</a>)
+
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "notes/note_circuit_filters.pdf">Note (Circuit Filters)</a>)
+
+          </td>
+          <td>
+                <b>Section 4A</b>
+              <br/>
+
+
+
+          </td>
+          <td rowspan="2" class="center">
+            Lab 4: Color Organ I<br/>
+
+                (<a rel="noopener noreferrer" target="_blank" href = "lab/Lab 4 Color Organ Part 1.zip">Lab</a>)
+          </td>
+          <td rowspan="2" class="center">
+              Homework 4
+
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            09/26 Th
+          </td>
+          <td>
+            Filters: Resonance
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "https://www.youtube.com/watch?v&#x3D;UKpCc50odkU">Webcast</a>)
+
+          </td>
+          <td>
+                <b>Section 4B</b>
+              <br/>
+
+
+
+          </td>
+        </tr>
+      </tbody>
+      <tbody id='wk5'>
+        <tr>
+          <td rowspan="2" class="center">
+            5<br/>
+          </td>
+          <td class="center">
+            10/01 Tu
+          </td>
+          <td>
+            Robotics: Control in discrete-time. Basic Concepts
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "https://www.youtube.com/watch?v&#x3D;nSbOJFUCl-k">Webcast</a>)
+
+          </td>
+          <td>
+                <b>Section 5A</b>
+              <br/>
+
+
+
+          </td>
+          <td rowspan="2" class="center">
+            Lab 5: Color Organ II<br/>
+
+                (<a rel="noopener noreferrer" target="_blank" href = "lab/lab5.zip">Lab</a>)
+          </td>
+          <td rowspan="2" class="center">
+              Homework 5
+
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            10/03 Th
+          </td>
+          <td>
+            Robotics and Learning: System Identification
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "https://www.youtube.com/watch?v&#x3D;FBlZKU9CbjQ">Webcast</a>)
+
+          </td>
+          <td>
+                <b>Section 5B</b>
+              <br/>
+
+
+
+          </td>
+        </tr>
+      </tbody>
+      <tbody id='wk6'>
+        <tr>
+          <td rowspan="2" class="center">
+            6<br/>
+          </td>
+          <td class="center">
+            10/08 Tu
+          </td>
+          <td>
+            Robotics and Learning: Outlier Rejection
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "https://www.youtube.com/watch?v&#x3D;xtiw8sWFoEo">Webcast</a>)
+
+          </td>
+          <td>
+                <b>No Section</b>
+<br/>
+
+
+
+          </td>
+          <td rowspan="2" class="center">
+            Project Part 1: Circuits<br/>
+
+                (<a rel="noopener noreferrer" target="_blank" href = "lab/Project_1_Circuits.zip">Lab</a>)
+          </td>
+          <td rowspan="2" class="center">
+
+            Midterm 1 Redo <br>(<a rel="noopener noreferrer" target="_blank" href="homework/sol_mt1.pdf">Sols</a>)<br>(<a rel="noopener noreferrer" target="_blank" href="self-grade-6.html">Self Grade</a>)
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            10/10 Th
+          </td>
+          <td>
+            Cancelled due to PG&E response to Wind
+            <br/>
+          </td>
+          <td>
+                <b>No Section</b>
+<br/>
+
+
+
+          </td>
+        </tr>
+      </tbody>
+      <tbody id='wk7'>
+        <tr>
+          <td rowspan="2" class="center">
+            7<br/><b><font color="red">Midterm 10/15<br/>9:30–11am</font></b>
+          </td>
+          <td class="center">
+            10/15 Tu
+          </td>
+          <td>
+            In-Class Midterm 1
+            <br/>
+          </td>
+          <td>
+                <b>Section 7A</b>
+              <br/>
+
+
+
+          </td>
+          <td rowspan="2" class="center">
+            Project Part 2: System ID<br/>
+
+                (<a rel="noopener noreferrer" target="_blank" href = "lab/Project_Pt2_SystemID.zip">Lab</a>)
+          </td>
+          <td rowspan="2" class="center">
+              Homework 7
+
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            10/17 Th
+          </td>
+          <td>
+            Robotics: Finish outliers and orthonormalization, start stability
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "https://www.youtube.com/watch?v&#x3D;iNykNlwic3k">Webcast</a>)
+
+          </td>
+          <td>
+                <b>Section 7B</b>
+              <br/>
+
+
+
+          </td>
+        </tr>
+      </tbody>
+      <tbody id='wk8'>
+        <tr>
+          <td rowspan="2" class="center">
+            8<br/>
+          </td>
+          <td class="center">
+            10/22 Tu
+          </td>
+          <td>
+            Robotics: Stability
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "https://www.youtube.com/watch?v&#x3D;Q-KBiEKlDB8">Webcast</a>)
+
+          </td>
+          <td>
+                <b>Section 8A</b>
+              <br/>
+
+
+
+          </td>
+          <td rowspan="2" class="center">
+            Project Part 3: Closed-Loop Control<br/>
+
+                (<a rel="noopener noreferrer" target="_blank" href = "lab/Project_Pt_3_Controls.zip">Lab</a>)
+          </td>
+          <td rowspan="2" class="center">
+              Homework 8
+
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            10/24 Th
+          </td>
+          <td>
+            Robotics: Stability and Feedback to Stabilize
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "https://www.youtube.com/watch?v&#x3D;tA87Xuqn2ls">Webcast</a>)
+
+          </td>
+          <td>
+                <b>Section 8B</b>
+              <br/>
+
+
+
+          </td>
+        </tr>
+      </tbody>
+      <tbody id='wk9'>
+        <tr>
+          <td rowspan="2" class="center">
+            9<br/>
+          </td>
+          <td class="center">
+            10/29 Tu
+          </td>
+          <td>
+            Robotics and Learning: Planning and minimum-energy paths
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "https://www.youtube.com/watch?v&#x3D;B9ZPxx9ZSbM">Webcast</a>)
+
+          </td>
+          <td>
+                <b>Section 9A</b>
+              <br/>
+
+
+
+          </td>
+          <td rowspan="2" class="center">
+            Project Part 4: SVD/PCA<br/>
+
+                (<a rel="noopener noreferrer" target="_blank" href = "lab/SVD_PCA_lab.zip">Lab</a>)
+          </td>
+          <td rowspan="2" class="center">
+              Homework 9
+
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            10/31 Th
+          </td>
+          <td>
+            Learning: The SVD
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "https://www.youtube.com/watch?v&#x3D;8OOrh4Pzj_g">Webcast</a>)
+
+          </td>
+          <td>
+                <b>Section 9B</b>
+              <br/>
+
+
+
+          </td>
+        </tr>
+      </tbody>
+      <tbody id='wk10'>
+        <tr>
+          <td rowspan="2" class="center">
+            10<br/>
+          </td>
+          <td class="center">
+            11/05 Tu
+          </td>
+          <td>
+            Learning: PCA
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "https://www.youtube.com/watch?v&#x3D;A7xI-fl92Cs">Webcast</a>)
+
+          </td>
+          <td>
+                <b>Section 10A</b>
+              <br/>
+
+
+
+          </td>
+          <td rowspan="2" class="center">
+            Buffer Days and Veteran's Day<br/>
+          </td>
+          <td rowspan="2" class="center">
+              Homework 10
+
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            11/07 Th
+          </td>
+          <td>
+            Learning: Classification
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "https://www.youtube.com/watch?v&#x3D;Qkrsd5BnD2c">Webcast</a>)
+
+          </td>
+          <td>
+                <b>Section 10B</b>
+              <br/>
+
+
+
+          </td>
+        </tr>
+      </tbody>
+      <tbody id='wk11'>
+        <tr>
+          <td rowspan="2" class="center">
+            11<br/><b><font color="red">Midterm 11/13<br/>8–10pm</font></b>
+          </td>
+          <td class="center">
+            11/12 Tu
+          </td>
+          <td>
+            Robotics: CCF for Stabilization
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "https://www.youtube.com/watch?v&#x3D;ZNPCiMIQ6qg">Webcast</a>)
+
+          </td>
+          <td>
+                <b>Section 11A</b>
+              <br/>
+
+
+
+          </td>
+          <td rowspan="2" class="center">
+            Buffer Days: SVD/PCA Continued<br/>
+          </td>
+          <td rowspan="2" class="center">
+
+            Midterm 2 Redo <br>(<a rel="noopener noreferrer" target="_blank" href="homework/sol_mt2.pdf">Sols</a>)<br>(<a rel="noopener noreferrer" target="_blank" href="self-grade-mt2-redo.html">Self Grade</a>)
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            11/14 Th
+          </td>
+          <td>
+            Robotics and Learning: Linearization for nonlinear problems
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "https://www.youtube.com/watch?v&#x3D;ENPycXcQX0o">Webcast</a>)
+
+          </td>
+          <td>
+                <b>Section 11B</b>
+              <br/>
+
+
+
+          </td>
+        </tr>
+      </tbody>
+      <tbody id='wk12'>
+        <tr>
+          <td rowspan="2" class="center">
+            12<br/>
+          </td>
+          <td class="center">
+            11/19 Tu
+          </td>
+          <td>
+            Learning: Interpolation
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "https://www.youtube.com/watch?v&#x3D;W2C2PAqKmyg">Webcast</a>)
+
+          </td>
+          <td>
+                <b>Section 12A</b>
+              <br/>
+
+
+
+          </td>
+          <td rowspan="2" class="center">
+            Project Part 5: Advanced Controls<br/>
+
+                (<a rel="noopener noreferrer" target="_blank" href = "lab/Project Pt5_Adv Controls.zip">Files</a>)
+          </td>
+          <td rowspan="2" class="center">
+              Homework 12
+
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            11/21 Th
+          </td>
+          <td>
+            Learning: Interpolation
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "https://www.youtube.com/watch?v&#x3D;0S7RCULHjHc">Webcast</a>)
+
+          </td>
+          <td>
+                <b>Section 12B</b>
+              <br/>
+
+
+
+          </td>
+        </tr>
+      </tbody>
+      <tbody id='wk13'>
+        <tr>
+          <td rowspan="2" class="center">
+            13<br/>
+          </td>
+          <td class="center">
+            11/26 Tu
+          </td>
+          <td>
+            Learning: Interpolation
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "https://www.youtube.com/watch?v&#x3D;lyVzSCunSE8">Webcast</a>)
+
+          </td>
+          <td>
+                <b>Section 13A</b>
+              <br/>
+
+
+
+          </td>
+          <td rowspan="2" class="center">
+            <br/>
+          </td>
+          <td rowspan="2" class="center">
+              Homework 13
+
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            11/28 Th
+          </td>
+          <td>
+            Thanksgiving Break
+            <br/>
+          </td>
+          <td>
+                <b>Section 13B</b>
+              <br/>
+
+
+
+          </td>
+        </tr>
+      </tbody>
+      <tbody id='wk14'>
+        <tr>
+          <td rowspan="2" class="center">
+            14<br/>
+          </td>
+          <td class="center">
+            12/03 Tu
+          </td>
+          <td>
+            Wireless: basic modeling and OFDM
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "https://www.youtube.com/watch?v&#x3D;jhRL9-hfNMA">Webcast</a>)
+
+          </td>
+          <td>
+                <b>Section 14A</b>
+              <br/>
+
+
+
+          </td>
+          <td rowspan="2" class="center">
+            Project Part 6: Integration<br/>
+
+                (<a rel="noopener noreferrer" target="_blank" href = "lab/Project Pt 6_Integration.zip">Files</a>)
+          </td>
+          <td rowspan="2" class="center">
+              Homework 14
+
+
+            <br>Participation Report Document <br>(<a rel="noopener noreferrer" target="_blank" href="homework/Participation_Report.docx">Doc</a>)
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            12/05 Th
+          </td>
+          <td>
+            (Lecture Cancelled, Makeup Lecture Tuesday of RRR Week) Wireless and Learning: Tracking while communicating
+            <br/>
+          </td>
+          <td>
+                <b>Section 14B</b>
+              <br/>
+
+
+
+          </td>
+        </tr>
+      </tbody>
+      <tbody id='wk15'>
+        <tr>
+          <td rowspan="1" class="center">
+            15<br/>
+          </td>
+          <td class="center">
+
+          </td>
+          <td>
+            RRR Week
+            <br/>
+          </td>
+          <td>
+          </td>
+          <td rowspan="1" class="center">
+            RRR Week: Finals Week<br/>
+          </td>
+          <td rowspan="1" class="center">
+
+
+          </td>
+        </tr>
+      </tbody>
+      <tbody id='wk16'>
+        <tr>
+          <td rowspan="1" class="center">
+            16<br/>
+          </td>
+          <td class="center">
+
+          </td>
+          <td>
+            Final Examinations
+            <br/>
+          </td>
+          <td>
+          </td>
+          <td rowspan="1" class="center">
+            <br/>
+          </td>
+          <td rowspan="1" class="center">
+
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script src="highlightCalendar.js"></script>
+<div class='row'>
+  <a class="anchor" id="google-calendar"></a>
+  <h2>Calendar</h2>
+  <div class="scrollable">
+    <iframe src="https://calendar.google.com/calendar/embed?title=EECS16B%20Calendar&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=berkeley.edu_qi20jb3djsuebjr2a3qbllat7k@group.calendar.google.com&amp;color=%234E5D6C&amp;src=berkeley.edu_jdsd99a3f6533mf4l7c87kd1mo@group.calendar.google.com&amp;color=%23113F47&amp;src=berkeley.edu_tifp2lotolrhccemi2huc2p4ds@group.calendar.google.com&amp;color=%235F6B02&amp;src=berkeley.edu_ddmvkogfmudc51s6v2n2rs0bss%40group.calendar.google.com&amp;color=%2328754E&amp;src=berkeley.edu_araefvc3huqg0to9bip49sm6ck@group.calendar.google.com&amp;color=%23711616&amp;src=berkeley.edu_85smq7cbtsnqhkjco4b13iscfg%40group.calendar.google.com&amp;color=%23B1365F&amp;src=berkeley.edu_hrji06s3tpl37jbj5b246kaofg%40group.calendar.google.com&amp;color=%23B1440E&amp;src=berkeley.edu_h4gjeltgin7hksligvcmitkl9s%40group.calendar.google.com&amp;color=%23754916&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+  </div>
+  <h3>
+    Please note the colors for discussion sections:
+  </h3>
+  <div class="row">
+    <div class="col-md-4 col-sm-4 col-xs-2" style="background-color:#e67399;">There is pink for freshmen,</div>
+    <div class="col-md-4 col-sm-4 col-xs-2" style="background-color:#e6804d;">orange for Math 54,</div>
+    <div class="col-md-4 col-sm-4 col-xs-2" style="background-color:#b56413;"><font color="white">brown for transfers,</font></div>
+    <div class="col-md-4 col-sm-4 col-xs-2" style="background-color:#ad2c2d;"><font color="white">and red for general sections.</font></div>
+  </div>
+</div>
+<div class="row">
+  <a class="anchor" id="resources"></a>
+  <h2>Resources</h2>
+
+  <a target="_blank" href="https://piazza.com/class/jzapntwvv074c9">Piazza:</a> ask questions here.
+  <br/><a href="hw-practice/">Homework Practice:</a> practice homework questions.
+
+  <h3>Lab</h3>
+  <ul>
+    <li><a target="_blank" href="lab/Lab_Syllabus_Fa19.pdf">Syllabus</a> </li>
+    <li><a target="_blank" href="https://www.youtube.com/playlist?list&#x3D;PLQ1OVCqw6RUMX2JzPw2G15s5mZovuav8-">Lab tutorials</a> </li>
+    <li><a target="_blank" href="student-resources/oscilloscope-cheatsheet.pdf">Oscilloscope cheat sheet</a> </li>
+  </ul>
+  <h3>Video Notes</h3>
+  <ul>
+    <li><a target="_blank" href="https://www.youtube.com/watch?v&#x3D;Pp7qYJU1mrA">Intro to transistors and digital logic</a> </li>
+    <li><a target="_blank" href="https://www.youtube.com/watch?v&#x3D;OTbiywzWyPw">RC Transients</a> </li>
+    <li><a target="_blank" href="https://www.youtube.com/watch?v&#x3D;B4Db-wiW5EM">Differential Equations</a> </li>
+    <li><a target="_blank" href="https://www.youtube.com/watch?v&#x3D;rKBZBE9dw4A">Second Order Circuits</a> </li>
+    <li><a target="_blank" href="https://www.youtube.com/watch?v&#x3D;Dy6LG_69iQ4">Linearization</a> </li>
+    <li><a target="_blank" href="https://www.youtube.com/watch?v&#x3D;Q1H-1Ciu554">Observers and Observability</a> </li>
+    <li><a target="_blank" href="https://www.youtube.com/watch?v&#x3D;hzFcDYodP7A">Feedback Control</a> </li>
+    <li><a target="_blank" href="https://www.youtube.com/watch?v&#x3D;j0SJhVIfb5g">Singular Value Decomposition</a> </li>
+  </ul>
+  <h3>Circuits</h3>
+  <ul>
+    <li><a target="_blank" href="student-resources/Charge.pdf">Charge</a> </li>
+    <li><a target="_blank" href="student-resources/Current.pdf">Current</a> </li>
+    <li><a target="_blank" href="student-resources/Voltage.pdf">Voltage</a> </li>
+    <li><a target="_blank" href="student-resources/Kirchoff.pdf">Kirchoff&#x27;s Laws</a> </li>
+    <li><a target="_blank" href="student-resources/ResistorsInSeriesAndParallel.pdf">Parallel and Series Resistors</a> </li>
+    <li><a target="_blank" href="student-resources/VoltageAndCurrentDividers.pdf">Voltage and Current Dividers</a> </li>
+    <li><a target="_blank" href="student-resources/thevenin.pdf">Thevenin / Norton Equivalent Circuits and Source Transformation</a> </li>
+    <li><a target="_blank" href="student-resources/bode_plot_practice.zip">Bode plot practice problems</a> </li>
+  </ul>
+  <h3>DFT</h3>
+  <ul>
+    <li><a target="_blank" href="https://betterexplained.com/articles/an-interactive-guide-to-the-fourier-transform/">Interactive guide to the DFT</a> </li>
+    <li><a target="_blank" href="http://terpconnect.umd.edu/~jzsimon/enee222/ref/enee241text0708.pdf">A New Sequence in Signals and Linear Systems&#x27;s take on DFT</a> starts on page 144</li>
+    <li><a target="_blank" href="http://bgrawi.com/Fourier-Visualizations/">Fourier visualizations</a> </li>
+  </ul>
+  <h3>PCA &amp; SVD</h3>
+  <ul>
+    <li><a target="_blank" href="https://www.cs.princeton.edu/picasso/mats/PCA-Tutorial-Intuition_jp.pdf">A tutorial on PCA</a> </li>
+    <li><a target="_blank" href="http://www.ams.org/publicoutreach/feature-column/fcarc-svd">An article about SVD and its applications</a> </li>
+    <li><a target="_blank" href="http://math.mit.edu/~gs/linearalgebra/linearalgebra5_7-1.pdf">Image processing with the SVD</a> </li>
+    <li><a target="_blank" href="http://setosa.io/ev/principal-component-analysis/">Visualization of PCA</a> </li>
+    <li><a target="_blank" href="http://tech.nitoyon.com/en/blog/2013/11/07/k-means/">Visualization of k-means</a> </li>
+  </ul>
+  <h3>Sampling and Aliasing</h3>
+  <ul>
+    <li><a target="_blank" href="http://www.dspguide.com/ch27/6.htm">JPEG transform compression</a> </li>
+  </ul>
+  <h3>Controls</h3>
+  <ul>
+    <li><a target="_blank" href="http://inst.eecs.berkeley.edu/~ee16b/sp18/note/16Breader.pdf">Murat Arcak&#x27;s EECS16B reader</a> </li>
+    <li><a target="_blank" href="http://www.cds.caltech.edu/~murray/amwiki/index.php/Main_Page">Murray and Astrom</a> </li>
+    <li><a target="_blank" href="https://www.amazon.com/Digital-Control-Dynamic-Systems-Edition/dp/0201820544">Franklin, Powell, and Workman</a> </li>
+  </ul>
+</div>
+<a class="anchor" id="staff"></a>
+<h2>Course Staff</h2>
+<h3>Instructors</h3>
+<div class='row'>
+  <div class='center col-md-4 col-sm-4 col-xs-6 bottomspace'>
+    <a target="_blank" class='img-link' href="http://www2.eecs.berkeley.edu/Faculty/Homepages/sahai.html"><img class='headshot img-circle' src='photos-instructor/Sahai.jpg'/></a>
+    <br/>
+    <strong><a target="_blank" href="http://www2.eecs.berkeley.edu/Faculty/Homepages/sahai.html">Anant Sahai</a></strong><br/>
+
+    sahai@eecs.
+  </div>
+</div>
+
+<h3>GSIs</h3>
+<div class='row'>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+      <img class='headshot img-circle' src='photos-gsi/KarinaChang.jpg'/>
+    <br/>
+    <b>Karina Chang</b><br/>
+    Admin Head<br/>
+    jkarinac@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+      <img class='headshot img-circle' src='photos-gsi/RamseyMardini.jpg'/>
+    <br/>
+    <b>Ramsey Mardini</b><br/>
+    Admin Head<br/>
+    ramseymardini@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+      <img class='headshot img-circle' src='photos-gsi/Kuan-YunLee.jpg'/>
+    <br/>
+    <b>Kuan-Yun Lee</b><br/>
+    Content + Discussion<br/>
+    timkylee@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+      <img class='headshot img-circle' src='photos-gsi/NathanLambert.jpg'/>
+    <br/>
+    <b>Nathan Lambert</b><br/>
+    Content + Discussion<br/>
+    nol@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+      <img class='headshot img-circle' src='photos-gsi/PavanBhargava.jpg'/>
+    <br/>
+    <b>Pavan Bhargava</b><br/>
+    Content + Discussion<br/>
+    pvnbhargava@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+      <img class='headshot img-circle' src='photos-gsi/SidneyBuchbinder.jpg'/>
+    <br/>
+    <b>Sidney Buchbinder</b><br/>
+    Content + Discussion<br/>
+    buchbinder@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+      <img class='headshot img-circle' src='photos-gsi/HiteshYalamanchili.jpg'/>
+    <br/>
+    <b>Hitesh Yalamanchili</b><br/>
+    Discussion<br/>
+    hiteshy@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+      <img class='headshot img-circle' src='photos-gsi/GaoyueZhou.jpg'/>
+    <br/>
+    <b>Gaoyue Zhou</b><br/>
+    Discussion<br/>
+    zhougy_99@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+      <img class='headshot img-circle' src='photos-gsi/NickNolan.jpg'/>
+    <br/>
+    <b>Nick Nolan</b><br/>
+    Discussion<br/>
+    nick.nolan@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+      <img class='headshot img-circle' src='photos-gsi/SimonKuang.jpg'/>
+    <br/>
+    <b>Simon Kuang</b><br/>
+    Discussion<br/>
+    simontheflutist@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+      <img class='headshot img-circle' src='photos-gsi/MaggiePayne.jpg'/>
+    <br/>
+    <b>Maggie Payne</b><br/>
+    Lab Head<br/>
+    paynme0@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+      <img class='headshot img-circle' src='photos-gsi/ZainZaidi.jpg'/>
+    <br/>
+    <b>Zain Zaidi</b><br/>
+    Lab Head<br/>
+    zzaidi@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+      <img class='headshot img-circle' src='photos-gsi/MiaMirkovic.jpg'/>
+    <br/>
+    <b>Mia Mirkovic</b><br/>
+    Lab<br/>
+    miamirkovic@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+      <img class='headshot img-circle' src='photos-gsi/JoveYuan.jpg'/>
+    <br/>
+    <b>Jove Yuan</b><br/>
+    Lab<br/>
+    jove@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+      <img class='headshot img-circle' src='photos-gsi/JustinLu.jpg'/>
+    <br/>
+    <b>Justin Lu</b><br/>
+    Lab<br/>
+    justin.lu222@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+      <img class='headshot img-circle' src='photos-gsi/MikaelaFrichtel.jpg'/>
+    <br/>
+    <b>Mikaela Frichtel</b><br/>
+    Lab<br/>
+    mfrichtel@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+      <img class='headshot img-circle' src='photos-gsi/RaymondGu.jpg'/>
+    <br/>
+    <b>Raymond Gu</b><br/>
+    Lab<br/>
+    raymongdu1998@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+      <img class='headshot img-circle' src='photos-gsi/VictorLee.jpg'/>
+    <br/>
+    <b>Victor Lee</b><br/>
+    Lab<br/>
+    vklee88@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+      <img class='headshot img-circle' src='photos-gsi/MeeraLester.jpg'/>
+    <br/>
+    <b>Meera Lester</b><br/>
+    Lab<br/>
+    meeralester@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+      <img class='headshot img-circle' src='photos-gsi/SumerKohli.jpg'/>
+    <br/>
+    <b>Sumer Kohli</b><br/>
+    Software<br/>
+    sumer.kohli@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+      <img class='headshot img-circle' src='photos-gsi/NeeleshRamachandran.jpg'/>
+    <br/>
+    <b>Neelesh Ramachandran</b><br/>
+    Software<br/>
+    neelesh.r@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+      <img class='headshot img-circle' src='photos-gsi/StevenLu.jpg'/>
+    <br/>
+    <b>Steven Lu</b><br/>
+    Lab ASE<br/>
+    stevenl@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+      <img class='headshot img-circle' src='photos-gsi/VinRamamurti.jpg'/>
+    <br/>
+    <b>Vin Ramamurti</b><br/>
+    Lab ASE<br/>
+    vin.ramamurti@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+      <img class='headshot img-circle' src='photos-gsi/KaitlynChan.jpg'/>
+    <br/>
+    <b>Kaitlyn Chan</b><br/>
+    Lab ASE<br/>
+    kaitlynjchan@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+      <img class='headshot img-circle' src='photos-gsi/ArinNair.jpg'/>
+    <br/>
+    <b>Arin Nair</b><br/>
+    Lab ASE<br/>
+    arinnair@
+    </div>
+  <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+    <br/><br/><br/><br/><b>Please add berkeley.edu to the end of all emails</b>
+  </div>
+</div>
+<div class='row'>
+
+  <a class="anchor" id="policies"></a>
+
+  <h2>Policies</h2>
+
+  <h3>Course Info</h3>
+  <a class="anchor" id="courseInfo"></a>
+
+  <p>The EECS 16AB series (Designing Information Devices and Systems) is a pair of introductory-level courses introducing students to EECS. The courses have a particular emphasis on how to build and understand systems interacting with the world from an informational point of view. Mathematical modeling is an important theme throughout these courses, and students will learn many conceptual tools along the way. These concepts are rooted in specific application domains. Students should understand why they are learning something.</p>
+
+  <p>An important part of being a successful engineer is being able to identify the important and relevant structure in a complex problem while ignoring minor issues. EECS 16A focuses on modeling as abstraction: how can we see the relevant underlying structure in a problem? It introduces the basics of linear modeling, largely from a "static" and deterministic point of view. </p>
+
+  <p> EECS 16B deepens the understanding of linear modeling and introduces dynamics and control, along with additional applications. Finally, EECS 70, (which can be thought of as the third course in this sequence – except without any labs), introduces additional discrete structures for modeling problems, and brings in probability.</p>
+
+  <h3>Grade Breakdown</h3>
+  <a class="anchor" id="gradeBreak"></a>
+
+  <p> Our objective is to help you become the best engineer you can be, and grades are not everything. The various components of the class: homework, labs and exams are designed explicitly with this in mind. Every challenge is a growth opportunity. You will have the opportunity to gain points in the course through completing your homework, attending labs as well as through the exams.</p>
+
+  <p> This course is not graded on a curve. We will set absolute thresholds for performance that will map to grade boundaries. We encourage you to discuss the course material with each other and teach each other new ideas and concepts that you learn. Teaching the material is one of the best ways to learn, so discussing course material with colleagues in the class is a win-win situation for everyone. Grades are not everything, far from it, but that said, here is the breakdown for grading for this class.</p>
+
+  <div class="row">
+    <div class="col-sm-4">
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped table-hover">
+      <tbody>
+        <tr>
+          <td>Participation</td> <td>20 points <br>
+                                    25 if no lab</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Homework</td> <td>35 points <br>
+                                    40 if no lab</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Lab and Project (if you have lab) </td> <td>45 points </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Midterm 1</td> <td>50 points <br>
+                                    60 if no lab</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Midterm 2</td> <td>50 points <br>
+                                    60 if no lab</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Final</td> <td>100 points <br>
+                                    115 if no lab</td>
+        </tr>
+      </tbody>
+      </table>
+    </div>
+    </div>
+    <div id="canvasParent" class="col-sm-4" style="position: relative">
+      <canvas id="gradeBreakdown" style='width: 100%'></canvas>
+    </div>
+  </div>
+  <script src="js/Chart.Core.js"></script>
+  <script src="js/Chart.Doughnut.js"></script>
+  <script src="gradeBreakdown.js"></script>
+
+  <p> Notice that you can get many points by being regular with your homework and the lab. In addition, there will be opportunities to get extra credit in the class. Our goal is to help you learn the material as best as possible! </p>
+
+  <h3>Grading Scale</h3>
+  <a class="anchor" id="gradeScale"></a>
+
+  <p> This course is not curved. We define the following grading scale (in percentages):</p>
+
+<div class="row">
+    <div class="col-sm-4">
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped table-hover">
+    <tr>
+      <th>A+</th>
+      <th>[100+]</th>
+      <th>A</th>
+      <th>[93+)</th>
+      <th>A-</th>
+      <th>[90+)</th>
+    </tr>
+    <tr>
+      <th>B+</th>
+      <th>[84+)</th>
+      <th>B</th>
+      <th>[75+)</th>
+      <th>B-</th>
+      <th>[68+)</th>
+    </tr>
+    <tr>
+      <th>C+</th>
+      <th>[65+)</th>
+      <th>C</th>
+      <th>[62+)</th>
+      <th>C-</th>
+      <th>[58+)</th>
+    </tr>
+    <tr>
+      <th>D+</th>
+      <th>[57+)</th>
+      <th>D</th>
+      <th>[55+)</th>
+      <th>D-</th>
+      <th>[53+)</th>
+    </tr>
+    <tr>
+      <th>F</th>
+      <th>[0-, 53-)</th>
+    </tr>
+    </table>
+    </div>
+  </div>
+</div>
+
+<p> In the rare event that the instructors deem that a change needs to be made for a given exam, then you will be told where the grade boundaries are for that exam and how to adjust your score on the exam to get your points on the above scale. You will always know how you are doing in the course grade-wise. </p>
+
+<h3>Content-Creation Extra Credit Grading</h3>
+<a class="anchor" id="contentCreation"></a>
+
+<p> We will also award extra-credit points for students who create content and learning tools that benefit the entire class (e.g. a video demo of your lab, an illustrative pictorial explanation of a concept, a nice iPython demo, creating lecture slides to share with students, other creative content that engages with the course content). These can be posted to Piazza under the “student_content” folder and will be awarded extra credit at the discretion of a TA. The TA must endorse the content as high quality. If you have an idea of something you want to do and are wondering if it will count as extra credit please contact the professor.
+</p>
+
+<h3>Exam Clobbering</h3>
+  <a class="anchor" id="HWeffort"></a>
+  <p> This course spans a fairly deep set of ideas and concepts within a short period of time, and hence sustained and consistent effort and investment are critical to your success in this class. Similarly, by far the most common stressful mode we have observed in previous students who struggled and/or failed this class was attempting to do the bare minimum in general and then catch up/cram right before the exams.
+  </p>
+
+  <p> In order to formally encourage all of you to maintain the sustained effort that we have observed to be critical to success, we will be adopting a new policy regarding exam clobbering, participation, and effort. Specifically, for students who (1) complete an optional midterm redo and (2) perform significantly better on the final than on the relevant midterm, we will provide the opportunity to clobber a midterm.
+  </p>
+
+  <p> If you qualify for the clobber (i.e. (1) and (2)), you may replace your lowest midterm score with your scaled score on the final exam according to the formula below.
+  </p>
+
+  <p> Replacement MT score (on scale of 100) = max [MT score, final exam score - 15% (on scale of 100)] This essentially allows you to replace your midterm grade by a higher grade --- we want to reward improved performance.
+  </p>
+
+ <p> If you complete the optional midterm redo for both midterms, and are eligible for a clobber on both midterms, the clobber that helps your score more is applied (i.e. you may clobber either Midterm 1 or Midterm 2, but not both, and only if you complete both midterm redos). Please note that even though lecture attendance is not included in the clobbering eligibility criteria, we do strongly encourage you to attend lecture in person. </p>
+
+<h3>Participation</h3>
+<a class="anchor" id="participation"></a>
+
+<p> Participation is worth a maximum of 25 points, and is measured by the quality of holistic engagement with the course: lecture, discussion, HW Party, Piazza, and any other activities that demonstrate positive engagement. More details will be given later in a Piazza post, but these are basically good engaged citizen points.</p>
+
+<h3>Homework Party</h3>
+<a class="anchor" id="HWparty"></a>
+
+<p> Homework parties are your chance to meet and interact with other students, while also having the chance to get help from GSIs and Faculty. This is your chance to have a social experience as part of the class. We expect students to treat each other with respect during homework parties as well as during all other parts of the class – including interactions on Piazza, discussion and office hours. Remember that each of you is coming into a class with different experiences and backgrounds – use this as an opportunity to learn from one another. </p>
+
+<p> <b> Homework Party will be held on Fridays from 2-5 PM at the Wozniak Lounge in Soda. </b> </p>
+
+<p> Students are expected to help each other out, and if desired, form ad-hoc "pickup" homework groups in the style of a pickup basketball game. We highly encourage students to attend homework party.</p>
+
+<h3>Homework Submission</h3>
+<a class="anchor" id="HWsubmission"></a>
+
+<p> <b> Homeworks are due on Monday night at 11:59 PM. </b> You need to turn in a .pdf file consisting of your written-up solutions that also includes an attached pdf "printout" of your .ipynb code on Gradescope. <b> Any homework submissions that are turned in without the code “printout” (or screenshot) attached will receive a zero on the coded ipython notebook portions of the homework. Any problems without pages selected will receive zero credit. </b> If you have any questions about the format of a homework submission, please go to office hours or homework party. </p>
+
+<p> You will have the opportunity to resubmit your homework after homework solutions are released to get makeup credit. See below for details. </p>
+
+<h3>Homework Grading - Self-Grading</h3>
+<a class="anchor" id="selfGrading"></a>
+
+  <p>The point of homework in this class is for you to learn the material. To help you in doing this each student will grade their own homework. After the HW deadline, official solutions will be posted online. You will then be expected to read them and enter your own scores and comments for every part of every problem in the homework on a simple coarse scale:</p>
+
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped table-hover">
+        <thead>
+          <tr>
+            <th class="left txt"><b>Score</b></th>
+            <th class="left txt"><b>Reason</b></th>
+          </tr>
+        </thead>
+          <tbody>
+            <tr>
+              <td>0</td>
+              <td>Didn't attempt or very very wrong</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Got started and made some progress, but went off in the wrong direction or with no clear direction</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Right direction and got half-way there</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Mostly right but a minor thing missing or wrong</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>100% correct</td>
+            </tr>
+          </tbody>
+      </table>
+    </div>
+
+  <p> Note: You must justify self-grades of 2, 5, or 8 with a comment. Grades of 0 and 10 do not need to be justified. If you are really confused about how to grade a particular problem, you should post on Piazza. This is not supposed to be a stressful process. </p>
+
+  <p>
+    <b>Your self-grades will be due on the Wednesday following the homework deadline at 11:59 PM sharp. We will accept late self-grades up to a week after the original homework deadline for 65% credit on the associated homework assignment.</b>
+     If you don't enter a proper grade by this deadline, you are giving yourself a zero on that assignment. Merely doing the homework is not enough, you must do the homework; turn it in on time; read the solutions; do the self-grade; and turn it in on time.
+    <b>Unless all of these steps are done, you will get a zero for that assignment.</b></p>
+
+  <p><b>We will automatically drop the lowest homework score from your final grade calculation. </b> This drop is meant for emergencies. If you use this drop half-way into the semester, and request another, we cannot help you. </p>
+
+  <p> Just like we encourage you to use a study group for doing your homework, we strongly encourage you to have others help you in grading your assignments while you help grade theirs.</p>
+
+  <p>If you have any questions, please ask on Piazza.</p>
+
+  <h3>Homework Resbmission</h3>
+  <a class="anchor" id="HWresubmission"></a>
+
+  <p> Again, the point of homework in this class is to help you learn. We understand that sometimes work from other classes, midterms or your personal life can come in the way of making a homework deadline. For this reason we will allow you to resubmit your homework for 70% credit. </p>
+
+  <p> <b> Homework resubmissions must be HANDWRITTEN. Homework resubmissions will be due along with the self-grades, so they will be due by 11:59pm Wednesday night. If you choose to resubmit your homework, you must submit two sets of self-grades, one for the first submission and one for the second submission. For the second submission do self-grades as normal. We will apply the 70% correction. </b> </p>
+
+  <p> You need to turn in a .pdf file consisting of your written-up solutions that also includes an attached pdf "printout" of your .ipynb code on Gradescope. <b> Any homework submissions that are turned in without the code “printout” (or screenshot) attached will receive a zero on the coded ipython notebook portions of the homework. Any problems without pages selected will receive zero credit. </b> If you have any questions about the format of a homework submission, please go to office hours or homework party. </p>
+
+  <p> What does 70% credit mean? Let us say you only were able to get half-way through a problem during the first submission. You submitted your homework on Monday, and while going through the solutions you understood how to do the whole problem. Your self-grade for your first submission would be a 5/10. However, you can resubmit the homework problem with a fully correct solution and receive 70% of the remaining points as extra points, i.e. (10-5) * 70/100 = 3.5 extra points, and so your score for the problem would go from 5 points to 8.5 points. </p>
+
+  <h3>Homework Effort Policy</h3>
+  <a class="anchor" id="HWeffort"></a>
+
+  <p> Because the point of homework in this class is to help you learn, not to punish you for making small mistakes, if your final score (after resubmission and any other corrections are applied) on any homework is above 8/10, your grade on that HW will automatically be bumped up to 100% (10/10). </p>
+
+  <h3>Lab and Discussion Section Policies</h3>
+  <a class="anchor" id="labsdiscpolicies"></a>
+
+  <p> Check out updated lab policies here: <a href="Lab_Syllabus_Fa19.pdf"> Lab Syllabus</a>. This same information is also present at the top of the schedule table on this site. </p>
+
+  <p> Additionally, note that while discussion (like lecture) is a mandatory part of the course, we will not be taking attendance in either discussion or lecture. However, such attendance can help contribute to the participation portion of your grade. For more information, check <a href="https://piazza.com/class/jzapntwvv074c9?cid=318 "> this Piazza post</a>. </p>
+
+  <h3>Exam Policies</h3>
+  <a class="anchor" id="exampolicies"></a>
+
+  <p> <b> There are two midterms and one final. The midterms will be Thursday, October 10th, 2019 from 7pm to 9pm and Wednesday, November 13th, 2019 from 8pm to 10pm. The final will be held on Tuesday, December 17th, from 3pm to 6pm. Makeup exams will not be scheduled. </b> </p>
+
+  <p> Please plan for exams at these times. In case of an emergency on exam day, please email the head TAs as soon as possible and provide details of the issue as well as a contact phone number. Emergency exam conflicts will be handled on a case-by-case basis. Exam conflicts originating from a lecture conflict will not be accommodated. </p>
+
+  <p> On exam day, you must bring your Cal student ID to your exam location. Locations and logistics will be posted on Piazza closer to the exam dates. If you do not take your exam in the correct location, a large penalty will be applied to your exam score. Additionally, regrade requests on Gradescope are typically due within a week of exams being released on Gradescope. Late regrade requests will not be considered. If a regrade request is submitted for a part of a question on the exam, the grader reserves the right to regrade the entire exam and could potentially take points off. </p>
+
+  <h3>Exceptions</h3>
+  <a class="anchor" id="exceptions"></a>
+
+  <p> <b> Any requests for exceptions should be emailed to the head TAs. </b> </p>
+
+  <p> Email the exception request out as soon as possible. Exceptions will be handled on a case-by-case basis. Since there is one homework drop, missing homework is rarely excused. Examples of situations that merit an exception are medical emergencies and family emergencies. It will be easier for us to grant an exception if you have a doctor’s note or other documentation. </p>
+
+  <h3>Course Communication</h3>
+  <a class="anchor" id="coursecommunications"></a>
+
+  <p> <b> The instructors and TAs will post announcements, clarifications, hints, etc. on Piazza. </b> Hence you must check the EECS16B Piazza page frequently throughout the term. (You should already have access to the EECS16B Fall 2019 forum. If you do not, please let us know.) </p>
+
+  <p> If you have a question, your best option is to post a message on Piazza. The staff (instructors and TAs) will check the forum regularly, and if you use the forum, other students will be able to help you too. When using the forum, please avoid off-topic discussions, and please do not post answers to homework questions before the homework is due. Also, always look for a convenient category to post the question to (for example, each homework will have its own category, so please post there). That will ensure you get the answer faster. </p>
+
+  <p> If your question is personal or not of interest to other students, you may mark your question as private on Piazza, so only the instructors will see it. If you wish to talk with one of us individually, you are welcome to come to our office hours. Please reserve email for the questions you can't get answered in office hours, in discussion sections, or through the forum. </p>
+
+  <p> <b> For any exceptions that are of a personal nature, </b> please contact the head TAs.  Technical and homework questions are best resolved in homework and during office hours. </p>
+
+  <h3>Collaboration</h3>
+  <a class="anchor" id="collaboration"></a>
+
+  <p> We encourage you to work on homework problems in study groups of two to four people; however, you must always write up the solutions on your own. Similarly, you may use books or online resources to help solve homework problems, but you must always credit all such sources in your write up, and you must never copy material verbatim. <b> Using previous EECS16B homework, exam, and lab solutions is strictly prohibited, and will be considered academic dishonesty. This is not how you want to start your career as an engineer. </b> </p>
+
+  <p> We expect that most students can distinguish between helping other students and cheating. Explaining the meaning of a question, discussing a way of approaching a solution, or collaboratively exploring how to solve a problem within your group is an interaction that we encourage strongly. But you should write your homework solution strictly by yourself so that your hands and eyes can help you internalize the subject matter. You should acknowledge everyone whom you have worked with, or who has given you any significant ideas about the homework. This is good scholarly conduct. </p>
+
+  <h3>Don't Be Afraid to Ask For Help</h3>
+  <a class="anchor" id="help"></a>
+
+  <p> Are you struggling? Please come talk with us! The earlier we learn about your struggles, the more likely it is that we can help you. Waiting until right before an exam or the last few weeks of the semester to let us know about your problems is not an effective strategy - the later it is, the less we will be able to help you. </p>
+
+  <p> Even if you are convinced that you are the only person in the class who is struggling, please overcome any feelings of embarrassment or guilt, and come ask for help as soon as you need it – we can almost guarantee you're not the only person who feels this way. Don't hesitate to ask us for help – we really do care that you thrive! You can email the head TAs, or email / talk to any TA at any time -- we’re happy to help. </p>
+
+  <h3>Advice</h3>
+  <a class="anchor" id="help"></a>
+
+  <p> The following tips are offered based on our experience. </p>
+
+  <p> Do the homeworks! The homeworks are explicitly designed to help you to learn the material as you go along. There is usually a strong correlation between homework scores and final grades in the class. </p>
+
+  <p> Keep up with lectures! Discussion sections, labs and homeworks all touch on portions of what we discuss in lecture. Students do much better if they stay on track with the course. That will also help you keep the pace with your homework and study group. </p>
+
+  <p> Take part in discussion sections! Discussion sections are not auxiliary lectures. They are an opportunity for interactive learning. The success of a discussion section depends largely on the willingness of students to participate actively in it. As with office hours, the better prepared you are for the discussion, the more you are likely to benefit from it. </p>
+
+  <p> Please come to office hours! We love to talk to you and do a deep dive to help you understand the material better. </p>
+
+  <p> Form study groups! As stated above, you are encouraged to form small groups (two to four people) to work together on homeworks and on understanding the class material on a regular basis. In addition to being fun, this can save you a lot of time by generating ideas quickly and preventing you from getting hung up on some point or other. Of course, it is your responsibility to ensure that you contribute actively to the group; passive listening will likely not help you much. And recall the caveat above that you must write up your solutions on your own. We advise you strongly to spend some time on your own thinking about each problem before you meet with your study partners; this way, you will be in a position to compare ideas with your partners, and it will get you in practice for the exams. Make sure you work through all problems yourself, and that your final write-up is your own. Some groups try to split up the problems ("you do Problem 1, I'll do Problem 2, then we'll swap notes"); not only is this a punishable violation of our collaboration policies, it also ensures you will learn a lot less from this course. </p>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+
+  <h3>Course Info</h3>
+  <a class="anchor" id="courseInfo"></a>
+
+  <p>The EECS 16 series (Designing Information Devices and Systems) is a pair of freshman-level courses introducing students to EECS, with a particular emphasis on how we deal with systems interacting with the world from an information point of view.
+    Mathematical modeling is an important theme throughout these courses, and students will learn many conceptual tools along the way.
+    Throughout this series, generally applicable concepts and techniques are motivated by, and rooted in, specific exemplary application domains.
+    Students should understand why they are learning something.</p>
+
+  <p>EECS 16B deepens the understanding of linear modeling from EECS 16A and introduces dynamics and control, along with additional applications.
+    EECS 70 (which can be thought of as the third course in the sequence – except without any labs) brings in probability and introduces additional discrete structures for modeling problems. </p>
+
+  <h3>Grade Breakdown</h3>
+  <a class="anchor" id="gradeBreak"></a>
+  <p>
+    Unlike the other components, your ethics grade will be <b>multiplicatively</b> factored into your final grade.
+    Cheating in any form is not allowed.
+    Looking at old solutions of homework or copying off of other people is strictly prohibited, and also punishable by referring the matter to Student Affairs, etc. at our discretion.
+  </p>
+
+  <div class="row">
+    <div class="col-sm-4">
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped table-hover">
+      <tbody>
+        <tr>
+          <td>Participation</td> <td>20%</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Homework</td> <td>35%</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Labs</td> <td>45%</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Midterm 1</td> <td>50%</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Midterm 2</td> <td>50%</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Final</td> <td>100%</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Ethics</td> <td>x1.01</td>
+        </tr>
+      </tbody>
+      </table>
+    </div>
+    </div>
+    <div id="canvasParent" class='col-sm-4' style="position: relative">
+      <canvas id="gradeBreakdown" style='width: 100%'></canvas>
+    </div>
+  </div>
+  <script src="js/Chart.Core.js"></script>
+  <script src="js/Chart.Doughnut.js"></script>
+  <script src="gradeBreakdown.js"></script>
+
+  <h3>Homework Party</h3>
+  <a class="anchor" id="hwParty"></a>
+
+  <p><b>There will be homework parties on Friday&#x27;s from 2-5 PM in Soda&#x27;s Wozniak Lounge.
+    Homework party is completely optional.</b>
+    GSIs and readers will be present in shifts to answer any homework questions.
+    Students are expected to help each other out, and if desired, form ad-hoc "pickup" homework groups in the style of a pickup basketball game.
+    We highly encourage students to attend homework party.</p>
+
+  <h3>Homework Grading</h3>
+  <a class="anchor" id="hwGrading"></a>
+
+  <p>The primary way that the homework will be graded is by yourselves.
+    <b>Homeworks are usually due on Wednesday night at 11:59pm.</b>
+    You need to turn in both your code and written solutions in the form of a .ipynb file and a .pdf file consisting of your written-up solutions that also includes an attached PDF "printout" of your code.
+    <b>Any homework submissions that are turned in without both the .ipynb file and a .pdf of the solutions along with the code “printout” (or screenshot) attached will receive a zero on the coded iPython (a.k.a. Jupyter) notebook portions of the homework</b>.
+    If you have any questions about the format of a homework submission, please go to office hours or homework party.</p>
+
+  <p>After the HW deadline, official solutions will be posted online.
+    You will then be expected to read them and enter your own scores and comments for every part of every problem in the homework on a simple coarse scale:</p>
+
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped table-hover">
+        <thead>
+          <tr>
+            <th class="left txt"><b>Score</b></th>
+            <th class="left txt"><b>Reason</b></th>
+          </tr>
+        </thead>
+          <tbody>
+            <tr>
+              <td>0</td>
+              <td>Didn't attempt or very very wrong</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>2</td>
+              <td>Got started and made some progress, but went off in the wrong direction or with no clear direction</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>5</td>
+              <td>Right direction and got half-way there</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>8</td>
+              <td>Mostly right but a minor thing missing or wrong</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>10</td>
+              <td>100% correct</td>
+            </tr>
+          </tbody>
+      </table>
+    </div>
+
+  <p>Note:
+      All partial credit must be justified with a comment.
+    If you are really confused about how to grade a particular problem, you should post on <a href="https://piazza.com/class/jzapntwvv074c9">Piazza</a>.
+    This is not supposed to be a stressful process. </p>
+
+  <p>
+    <b>Your self-grades will be due on the Saturday following the homework deadline at 11:59pm.</b>
+    <b>We will accept late self-grades up to a week after the original self-grade deadline: you can turn them in by the following Wednesday for 90% credit and by the following Saturday for 50% credit.</b>
+    If you don't enter a proper grade by then, you are giving yourself a zero on that assignment.
+    Merely doing the homework is not enough, you must do the homework; turn it in on time; read the solutions; do the self-grade; and turn it in on time.
+    <b>Unless all of these steps are done, you will get a zero for that assignment.</b></p>
+
+  <p><b>We will drop the lowest homework score from your final grade calculation</b>, so getting a single zero on a HW is not the end of the world.
+    This drop is meant for emergencies.
+    If you use this drop half-way into the semester and request another, we cannot help you.</p>
+
+  <p>Just like we encourage you to use a study group for doing your homework, we strongly encourage you to have others help you in grading your assignments while you help grade theirs.
+    This will also help you avoid self-favoritism.</p>
+
+  <p>Course readers are going to be grading and sending you occasional comments.
+    Because we have reader grades, we will catch any attempts at trying to inflate your own scores.
+    This will be considered cheating and is definitely not worth the risk.
+    Your own scores will be used in computing your final grade for the course, adjusted by taking into account reader scores so that everyone is fairly graded effectively on the same scale.
+    For example, if we notice that you tend to give yourself 5s on questions where readers looking at your homeworks tend to give you 8s, we will apply an upward correction to adjust.</p>
+
+  <p>If you have any questions, please ask on <a href="https://piazza.com/class/jzapntwvv074c9">Piazza</a>.</p>
+
+  <h3>Homework Resubmission</h3>
+  <a class="anchor" id="hwResubmission"></a>
+  <p>
+    Again, the point of homework in this class is to help you learn.
+    We understand that sometimes work from other classes, midterms or your personal life can come in the way of making a homework deadline.
+    For this reason we will allow you to <b>resubmit your homework for 90% credit.</b>
+    Homework resubmissions must be <b>handwritten</b>.
+    Homework resubmissions will be due along with the self-grades, so by 11:59pm Saturday night.
+    If you choose to resubmit your homework, you must submit two sets of self-grades, one for the first submission and one for the second submission.
+    For the second submission do self-grades as normal.
+  </p>
+
+  <p>
+    <b>
+    However, you must have demonstrated a sincere effort in order to get points back.
+    If your original submission warranted 0 credit, then only 60% resubmission credit shall be awarded instead of 90%.
+    </b>
+  </p>
+
+  <p>
+    We will apply the 90% correction.
+  </p>
+
+  <p>
+    What does 90% credit mean?
+    Let us say you only were able to get half-way through a problem during the first submission.
+    You submitted your homework on Friday, and while going through the solutions you figured out how to do the whole problem.
+    Your self-grade for your first submission would be a 5/10.
+    However, you can resubmit the homework problem with a fully correct solution and receive 90% of the remaining points as extra points, i.e. (10-5) * 90/100 = 4.5 extra points, and so your score for the problem would go from 5 points to 9.5 points.
+  </p>
+
+  <h3>Course Communication</h3>
+  <a class="anchor" id="communication"></a>
+
+  <p><b>The instructors and TAs will post announcements, clarifications, hints, etc. on <a href="https://piazza.com/class/jzapntwvv074c9">Piazza</a>.</b>
+    You must check the EECS16B Piazza page frequently throughout the term.
+    (You should already have access to the EECS16B Fall 2019 forum.
+    If you do not, please let us know.)</p>
+
+  <p>If you have a question, your best option is to post a message there.
+    The staff will check the forum regularly, and other students will be able to help you too.
+    When using the forum, please avoid off-topic discussions, and please <b>do not post answers to homework questions before the homework is due</b>.
+    Also, always look for a convenient category to post the question to (for example, each homework will have its own category, so please post there).
+    That will ensure you get the answer faster.</p>
+
+  <p>If your question is personal or not of interest to other students, you may mark your question as private on Piazza, so only the instructors will see it.
+    If you wish to talk with one of us individually, you are also welcome to come to our office hours.
+    Please reserve email for the questions you can't get answered in office hours, in discussion sections, or through the forum.</p>
+
+  <p>It can be challenging for the instructors to gauge how smoothly the class is going.
+    We always welcome any feedback on what we could be doing better.
+    <b>If you would like to send anonymous comments or criticisms, feel free to use <a href='https://forms.gle/Q5LCXQKjp8PJYkiQ7'>this anonymous form</a>.</b></p>
+
+  <h3>Collaboration</h3>
+  <a class="anchor" id="collaboration"></a>
+
+  <p>We encourage you to work on homework problems in study groups of two to four people;
+    however, you must <b>always</b> write up the solutions on your own.
+    Similarly, you may use books or online resources to help solve homework problems, but you must always credit all such sources in your writeup, and you may never copy material verbatim.
+    <b>Using previous EECS16B homework, exam, and lab solutions is strictly prohibited, and will result in a case filed against you with the Office of Student Conduct.</b></p>
+
+  <p><b>Submit cheating or suspicious incident reports through <a href='https://forms.gle/FXdJwNFmDYG5UHYt5'>this other anonymous form</a>.</b></p>
+
+  <p>We expect that most students can distinguish between helping other students and cheating.
+    Explaining the meaning of a question, discussing a way of approaching a solution, or collaboratively exploring how to solve a problem within your group is an interaction that we encourage strongly.
+    But you should write your homework solution strictly by yourself so that your hands and eyes can help you internalize the subject matter.
+    You should acknowledge everyone whom you have worked with, or who has given you any significant ideas about the homework.
+    This is good scholarly conduct.</p>
+
+  <h3>Don't Be Afraid to Ask for Help</h3>
+  <a class="anchor" id="help"></a>
+
+  <p>Are you struggling?
+    Please come talk with us!
+    We would much rather deal with misunderstanding early on.
+    Even if you are convinced that you are the only person in the class that doesn't understand the material, and that it is entirely your fault for having fallen behind, please overcome any feelings of guilt and ask for help as soon as you need it – we can almost guarantee you're not the only person who feels this way.
+    Don't hesitate to ask us for help – we really do care that you learn!</p>
+
+  <p>Additionally, the earlier we learn about your struggles, the more likely it is that we can help you.
+    Waiting until right before an exam or the last few weeks of the semester to let us know about your problems is not an effective strategy - the later it is, the less we will be able to help you.</p>
+
+  <h3>Advice</h3>
+  <a class="anchor" id="advice"></a>
+
+  <p>The following tips are offered based on our experience.</p>
+
+  <p><b>Do the homeworks!</b>
+    The homeworks are explicitly designed to help you to learn the material as you go along.
+    Although the numerical weight of the homeworks is not huge, there is usually a strong correlation between homework scores and final grades in the class.</p>
+
+  <p><b>Keep up with lectures!</b>
+    Discussion sections, labs and homeworks all touch on portions of what we discuss in lecture.
+    <b>Students do much better if they stay on track with the course.</b>
+    That will also help you keep the pace with your homework and study group.</p>
+
+  <p><b>Take part in discussion sections!</b>
+    Discussion sections are not auxiliary lectures.
+    They are an opportunity for interactive learning.
+    The success of a discussion section depends largely on the willingness of students to participate actively in it.
+    As with office hours, the better prepared you are for the discussion, the more you are likely to benefit from it.</p>
+
+  <p><b>Come to office hours!</b>
+    We love to talk to you and do a deep dive to help you understand the material better.</p>
+
+  <p><b>Form study groups!</b>
+    As stated above, you are encouraged to form small groups (two to four people) to work together on homeworks and on understanding the class material on a regular basis.
+    In addition to being fun, this can save you a lot of time by generating ideas quickly and preventing you from getting hung up on some point or other.
+    Of course, it is your responsibility to ensure that you contribute actively to the group; passive listening will likely not help you much.
+    Also recall the caveat above, that you must write up your solutions on your own.
+    We strongly advise you to spend some time on your own thinking about each problem before you meet with your study partners;
+    this way, you will be in a position to compare ideas with your partners, and it will get you in practice for the exams.</p>
+
+  <p><b>Make sure you work through all problems yourself</b>, and that your final write-up is your own.
+    Some groups try to split up the problems ("you do Problem 1, I'll do Problem 2, then we'll swap notes");
+    not only is this a punishable violation of our collaboration policies, it also ensures you will learn a lot less from this course.</p>
+  -->
+
+</div>
+    </div>
+  </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="bootstrap-dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/parallax.min.js"></script>
+
+  </body>
+</html>

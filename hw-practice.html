@@ -1,0 +1,467 @@
+<!doctype html>
+<html ng-app="onlineProblems">
+<head>
+  <meta http-equiv="cache-control" content="max-age=0">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="-1">
+  <meta http-equiv="expires" content="Tue, 01 Jan 1980 11:00:00 GMT">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta charset="utf-8">
+  <title>EE16A :: Online Problems</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.6.0/loading-bar.css">
+  <style>
+    body {
+      padding-top: 70px;
+    }
+    a {
+      cursor: pointer;
+    }
+    img.img-responsive {
+      border: 0px solid black;
+      margin: 0;
+      padding: 0;
+    }
+    .vcenter {
+      display: inline-block;
+      vertical-align: middle;
+      float: none;
+    }
+    .vspace {
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+    label {
+      display: inline;
+    }
+    .bootstrap-growl {
+      position: fixed !important;
+      top: 70px !important;
+    }
+    #loading-bar-spinner {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" ui-sref="home">
+          <span class="glyphicon glyphicon-education"></span>
+          EE16A Online Problems
+        </a>
+      </div>
+      <div class="navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li dropdown>
+            <a class="dropdown-toggle" dropdown-toggle href="#">
+              <span class="glyphicon glyphicon-book"></span>
+              Problem Sets <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li ng-repeat="set in sets">
+                <a ui-sref="set({number: $index})">Practice {{ set.idx }}: {{ set.name }}</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <button class="btn btn-default navbar-btn" ng-click="reset()">Reset Progress</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container" ui-view>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-growl/1.0.0/jquery.bootstrap-growl.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular-cookies.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.12.0/ui-bootstrap-tpls.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angulartics/0.17.2/angulartics.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angulartics/0.17.2/angulartics-ga.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/restangular/1.4.0/restangular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.6.0/loading-bar.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+  <script>
+    var sets = [];
+  </script>
+
+  <!--
+  <script src="practice/set0/meta.js"></script>
+  <script src="practice/set1/meta.js"></script>
+  <script src="practice/set2/meta.js"></script>
+  <script src="practice/set3/meta.js"></script>
+  <script src="practice/set4/meta.js"></script>
+  <script src="practice/set5/meta.js"></script>
+  <script src="practice/set6/meta.js"></script>
+  <script src="practice/set7/meta.js"></script>
+  <script src="practice/set8/meta.js"></script>
+  <script src="practice/set9/meta.js"></script>
+  <script src="practice/set10/meta.js"></script>
+  <script src="practice/set11/meta.js"></script>
+  <script src="practice/set12/meta.js"></script>
+  <script src="practice/set13/meta.js"></script>
+  <script src="practice/set14/meta.js"></script>
+  <script src="practice/set15/meta.js"></script>
+  <script src="practice/set16/meta.js"></script>
+  <script src="practice/set17/meta.js"></script>
+  -->
+
+  <script type="text/javascript">document.write('<scr'+'ipt src="practice/set0/meta.js?'+Math.random()+'" type="text/javascript"></scr'+'ipt>');</script>
+  <script type="text/javascript">document.write('<scr'+'ipt src="practice/set1/meta.js?'+Math.random()+'" type="text/javascript"></scr'+'ipt>');</script>
+  <script type="text/javascript">document.write('<scr'+'ipt src="practice/set2/meta.js?'+Math.random()+'" type="text/javascript"></scr'+'ipt>');</script>
+  <script type="text/javascript">document.write('<scr'+'ipt src="practice/set3/meta.js?'+Math.random()+'" type="text/javascript"></scr'+'ipt>');</script>
+  <script type="text/javascript">document.write('<scr'+'ipt src="practice/set4/meta.js?'+Math.random()+'" type="text/javascript"></scr'+'ipt>');</script>
+  <script type="text/javascript">document.write('<scr'+'ipt src="practice/set5/meta.js?'+Math.random()+'" type="text/javascript"></scr'+'ipt>');</script>
+  <script type="text/javascript">document.write('<scr'+'ipt src="practice/set6/meta.js?'+Math.random()+'" type="text/javascript"></scr'+'ipt>');</script>
+  <script type="text/javascript">document.write('<scr'+'ipt src="practice/set7/meta.js?'+Math.random()+'" type="text/javascript"></scr'+'ipt>');</script>
+  <script type="text/javascript">document.write('<scr'+'ipt src="practice/set8/meta.js?'+Math.random()+'" type="text/javascript"></scr'+'ipt>');</script>
+  <script type="text/javascript">document.write('<scr'+'ipt src="practice/set9/meta.js?'+Math.random()+'" type="text/javascript"></scr'+'ipt>');</script>
+  <script type="text/javascript">document.write('<scr'+'ipt src="practice/set10/meta.js?'+Math.random()+'" type="text/javascript"></scr'+'ipt>');</script>
+  <script type="text/javascript">document.write('<scr'+'ipt src="practice/set11/meta.js?'+Math.random()+'" type="text/javascript"></scr'+'ipt>');</script>
+  <script type="text/javascript">document.write('<scr'+'ipt src="practice/set12/meta.js?'+Math.random()+'" type="text/javascript"></scr'+'ipt>');</script>
+  <script type="text/javascript">document.write('<scr'+'ipt src="practice/set13/meta.js?'+Math.random()+'" type="text/javascript"></scr'+'ipt>');</script>
+  <script type="text/javascript">document.write('<scr'+'ipt src="practice/set14/meta.js?'+Math.random()+'" type="text/javascript"></scr'+'ipt>');</script>
+  <script type="text/javascript">document.write('<scr'+'ipt src="practice/set15/meta.js?'+Math.random()+'" type="text/javascript"></scr'+'ipt>');</script>
+  <script type="text/javascript">document.write('<scr'+'ipt src="practice/set16/meta.js?'+Math.random()+'" type="text/javascript"></scr'+'ipt>');</script>
+  <script type="text/javascript">document.write('<scr'+'ipt src="practice/set17/meta.js?'+Math.random()+'" type="text/javascript"></scr'+'ipt>');</script>
+
+  <script type="text/ng-template" id="home.html">
+    <div class="list-group">
+      <a class="list-group-item" ui-sref="set({number:$index})" ng-repeat="set in sets">
+        <h4 class="list-group-item-heading">Practice {{ set.idx }}: {{ set.name }}</h4>
+        <div class="list-group-item-text">
+          Progress: {{ solved[$index] }} / {{ problems[$index] }} problem(s)
+          <progressbar value="solved[$index]" max="problems[$index]"></progressbar>
+        </div>
+      </a>
+    </div>
+  </script>
+  <script type="text/ng-template" id="set.html">
+    <div ng-repeat="part in set.contents">
+      <div ng-repeat="img in part.imgs" class="row">
+        <label><div class="col-xs-1 vcenter">
+          <input type="checkbox" ng-if="part.type=='multi'" class="pull-right" check-list="$parent.$parent.$parent.answer[$parent.$parent.$index]" ng-value="$index">
+          <input type="radio" ng-if="part.type=='single'" class="pull-right" ng-model="$parent.$parent.$parent.answer[$parent.$parent.$index]" ng-value="$index">
+        </div><!--
+        --><div class="col-xs-11 vcenter">
+          <img ng-src="{{ img }}" class="img-responsive" />
+        </div></label>
+      </div>
+      <div ng-if="part.type=='freeform'" class="row vspace">
+        <div class="col-xs-1 vcenter">
+        </div><!--
+        --><div class="col-xs-11 vcenter">
+          <input type="text" class="form-control" ng-model="$parent.$parent.answer[$parent.$index]" />
+        </div>
+      </div>
+      <div ng-if="part.type!='static'">
+        <div collapse="!isCollapsed">
+          <div class="row" ng-if="part.hint">
+            <div class="col-xs-1 vcenter">
+            </div><!--
+            --><div class="col-xs-11 vcenter">
+              <img ng-src="{{ part.hint }}" class="img-responsive" />
+            </div>
+          </div>
+        </div>
+        <div collapse="!isSolnCollapsed">
+          <div class="row" ng-if="part.soln">
+            <div class="col-xs-1 vcenter">
+            </div><!--
+            --><div class="col-xs-11 vcenter">
+              <img ng-src="{{ part.soln }}" class="img-responsive" />
+            </div>
+          </div>
+        </div>
+        <div class="row vspace">
+          <div class="col-xs-1 vcenter">
+          </div><!--
+          --><div class="col-xs-11 vcenter">
+            <div class="btn-group">
+              <div class="btn btn-warning btn-sm" ng-if="part.hint" ng-click="$parent.isCollapsed = !$parent.isCollapsed">
+                <span class="glyphicon glyphicon-question-sign"></span> Hint
+              </div>
+              <div class="btn btn-sm" ng-click="check($index)" ng-class="{'btn-primary': !result[$index], 'btn-success': result[$index]}">
+                <span class="glyphicon" ng-class="{'glyphicon-certificate': !result[$index], 'glyphicon-ok': result[$index]}"></span> Check Answer
+              </div>
+              <div class="btn btn-warning btn-sm" ng-if="part.soln" ng-click="$parent.isSolnCollapsed = !$parent.isSolnCollapsed">
+                <span class="glyphicon glyphicon-question-sign"></span> Solution
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </script>
+  <script>
+    var ls = angular.module('localStorage',[]);
+
+    ls.factory("$store",function($parse){
+      /**
+       * Global Vars
+       */
+      var storage = (typeof window.localStorage === 'undefined') ? undefined : window.localStorage,
+        supported = !(typeof storage == 'undefined' || typeof window.JSON == 'undefined');
+
+      var privateMethods = {
+        /**
+         * Pass any type of a string from the localStorage to be parsed so it returns a usable version (like an Object)
+         * @param res - a string that will be parsed for type
+         * @returns {*} - whatever the real type of stored value was
+         */
+        parseValue: function(res) {
+          var val;
+          try {
+            val = JSON.parse(res);
+            if (typeof val == 'undefined'){
+              val = res;
+            }
+            if (val == 'true'){
+              val = true;
+            }
+            if (val == 'false'){
+              val = false;
+            }
+            if (parseFloat(val) == val && !angular.isObject(val) ){
+              val = parseFloat(val);
+            }
+          } catch(e){
+            val = res;
+          }
+          return val;
+        }
+      };
+      var publicMethods = {
+        /**
+         * Set - let's you set a new localStorage key pair set
+         * @param key - a string that will be used as the accessor for the pair
+         * @param value - the value of the localStorage item
+         * @returns {*} - will return whatever it is you've stored in the local storage
+         */
+        set: function(key,value){
+          if (!supported){
+            try {
+              $.cookie(key, value);
+              return value;
+            } catch(e){
+              console.log('Local Storage not supported, make sure you have the $.cookie supported.');
+            }
+          }
+          var saver = JSON.stringify(value);
+           storage.setItem(key, saver);
+          return privateMethods.parseValue(saver);
+        },
+        /**
+         * Get - let's you get the value of any pair you've stored
+         * @param key - the string that you set as accessor for the pair
+         * @returns {*} - Object,String,Float,Boolean depending on what you stored
+         */
+        get: function(key){
+          if (!supported){
+            try {
+              return privateMethods.parseValue($.cookie(key));
+            } catch(e){
+              return null;
+            }
+          }
+          var item = storage.getItem(key);
+          return privateMethods.parseValue(item);
+        },
+        /**
+         * Remove - let's you nuke a value from localStorage
+         * @param key - the accessor value
+         * @returns {boolean} - if everything went as planned
+         */
+        remove: function(key) {
+          if (!supported){
+            try {
+              $.cookie(key, null);
+              return true;
+            } catch(e){
+              return false;
+            }
+          }
+          storage.removeItem(key);
+          return true;
+        },
+        /**
+         * Bind - let's you directly bind a localStorage value to a $scope variable
+         * @param $scope - the current scope you want the variable available in
+         * @param key - the name of the variable you are binding
+         * @param def - the default value (OPTIONAL)
+         * @returns {*} - returns whatever the stored value is
+         */
+        bind: function ($scope, key, varname, def) {
+          def = def || '';
+          if (!publicMethods.get(key)) {
+            publicMethods.set(key, def);
+          }
+          $parse(varname).assign($scope, publicMethods.get(key));
+          $scope.$watch(varname, function (val) {
+            publicMethods.set(key, val);
+          }, true);
+          return publicMethods.get(key);
+        }
+      };
+      return publicMethods;
+    });
+  </script>
+  <script>
+    var app = angular.module('onlineProblems', ['ui.router', 'ui.bootstrap', 'localStorage']);
+
+    app.directive('checkList', function() {
+      return {
+        scope: {
+          list: '=checkList',
+          value: '@'
+        },
+        link: function(scope, elem, attrs) {
+          var handler = function(setup) {
+            var checked = elem.prop('checked');
+            var index = scope.list.indexOf(scope.value);
+
+            if (checked && index == -1) {
+              if (setup) elem.prop('checked', false);
+              else scope.list.push(scope.value);
+            } else if (!checked && index != -1) {
+              if (setup) elem.prop('checked', true);
+              else scope.list.splice(index, 1);
+            }
+          };
+
+          var setupHandler = handler.bind(null, true);
+          var changeHandler = handler.bind(null, false);
+
+          elem.bind('change', function() {
+            scope.$apply(changeHandler);
+          });
+          scope.$watch('list', setupHandler, true);
+        }
+      };
+    });
+
+    app.config(function($stateProvider, $urlRouterProvider){
+      $urlRouterProvider.otherwise('/home')
+      $stateProvider
+        .state('home', {
+          url: '',
+          templateUrl: 'home.html',
+          controller: function($scope, $rootScope, $store){
+            $scope.solved = [];
+            $scope.problems = [];
+            angular.forEach($rootScope.sets, function(set){
+              var probs = 0;
+              for (var i=0;i<set.contents.length;++i)
+                if (set.contents[i].type!='static')
+                  probs += 1;
+              $scope.problems.push(probs);
+              var solved = 0;
+              angular.forEach($store.get(set.name), function(){
+                solved += 1;
+              });
+              $scope.solved.push(solved);
+            });
+          }
+        });
+      $stateProvider
+        .state('set', {
+          url: '/set/{number}',
+          templateUrl: 'set.html',
+          controller: function($scope, $rootScope, $stateParams, $store){
+            $scope.set = $rootScope.sets[$stateParams.number];
+            $scope.answer = {};
+            $store.bind($scope, $scope.set.name, 'result', {});
+            $scope.check = function(index){
+              var correct = false;
+              var problem = $scope.set.contents[index];
+              var answer = $scope.answer[index];
+              if (problem.type=='single'){
+                correct = (problem.answer == answer);
+              }
+              else if (problem.type=='multi'){
+                correct = (problem.answer.slice(0).sort().join() == answer.slice(0).sort().join());
+                console.log($scope.set.contents[index]);
+              }
+              else if (problem.type=='freeform'){
+                var equal = function(x, y){
+                  x = x.toLowerCase().trim();
+                  y = y.toLowerCase().trim();
+                  if (x == y)
+                    return true;
+                  if (!isNaN(x) && !isNaN(y) && parseFloat(x)==parseFloat(y))
+                    return true;
+                  if (x[0]=='[' && y[0]=='[' && x[x.length-1]==']' && y[y.length-1]==']'){
+                    x = x.slice(1,x.length-1).trim().split(/\s+/);
+                    y = y.slice(1,y.length-1).trim().split(/\s+/);
+                    if (x.length!=y.length)
+                      return false;
+                    for (var i=0;i<x.length;++i)
+                      if (!equal(x[i], y[i]))
+                        return false;
+                    return true;
+                  }
+                  return false;
+                }
+                correct = equal(problem.answer, answer);
+              }
+              if (correct){
+                $scope.result[index] = 'solved';
+                $.bootstrapGrowl('Correct answer', {type: 'success', allow_dismiss: false});
+              }
+              else{
+                $.bootstrapGrowl('Incorrect answer', {type:'danger', allow_dismiss: false});
+              }
+            }
+            angular.forEach($scope.set.contents, function(part, index){
+              if ($scope.result[index]=='solved'){
+                if (part.type=='multi')
+                  $scope.answer[index] = $scope.set.contents[index].answer.slice(0);
+                else if (part.type=='single')
+                  $scope.answer[index] = $scope.set.contents[index].answer;
+                else if (part.type=='freeform')
+                  $scope.answer[index] = $scope.set.contents[index].answer.slice(0);
+              }
+              else{
+                if (part.type=='multi'){
+                  $scope.answer[index] = [];
+                }
+                else if (part.type=='single'){
+                  $scope.answer[index] = null;
+                }
+                else if (part.type=='freeform'){
+                  $scope.answer[index] = "";
+                }
+              }
+            });
+          }
+        });
+    });
+
+    app.run(function($rootScope, $stateParams, $store, $state){
+      $rootScope.sets = sets;
+      $rootScope.reset = function(){
+        if ('number' in $stateParams){
+          $store.set($rootScope.sets[$stateParams.number].name, {});
+        }
+        else{
+          angular.forEach($rootScope.sets, function(set){
+            $store.set(set.name, {});
+          });
+        }
+        var current = $state.current;
+        var params = angular.copy($stateParams);
+        $state.transitionTo(current, params, { reload: true, inherit: true, notify: true });
+      }
+    });
+  </script>
+
+</body>
+</html>
