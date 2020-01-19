@@ -1,5 +1,5 @@
 var now = new Date();
-var startSunday = new Date("25/8/2019");
+var startSunday = new Date("19/1/2020");
 var dateArray = [];
 for (i = 1; i < 20; i++) {
   var newDate = new Date(startSunday.getTime());
