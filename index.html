@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="http://eecs.berkeley.edu/favicon.ico" type="image/x-icon">
+    <link href="bootstrap-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <!-- fontawesome.com icons -->
+    <script src="https://kit.fontawesome.com/1243e45c88.js" crossorigin="anonymous"></script>
+    <title>EECS 127/227A: Optimization Models in Engineering, Spring 2020</title>
+  </head>
+
+  <body data-spy="scroll" data-target="#navscroll">
+
+    <div id="navscroll">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="." style="color: #000;"><strong>EECS 127/227A</strong> | Spring 2020</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" >
+              <ul class="nav navbar-nav pull-right">
+                <li><a id="na1" href="#schedule">Schedule</a></li>
+                <li><a id="na2" href="#google-calendar">Calendar</a></li>
+                <li><a id="na5" href="#staff">Staff</a></li>
+		<li><a id="na6" href="#resources">Resources</a></li>
+                <li class="dropdown">
+                  <a href="#policies" class="dropbtn">Policies</a>
+                  <div class="dropdown-content">
+                    <a href="#courseInfo">Course Info</a>
+		    <a href="#content">Course Content</a>
+		    <a href="#discussion">Discussion</a>
+		    <a href="#homework">Homework</a>
+		    <a href="#exams">Exams</a>
+                    <a href="#gradeBreak">Grade Breakdown</a>
+                    <a href="#dsp">DSP</a>
+                    <a href="#courseMaterials">Course Materials</a>
+                    <a href="#communication">Course Communication</a>
+                    <a href="#collaboration">Collaboration</a>
+                    <a href="#help">Asking for Help</a>
+                    <a href="#advice">Advice</a>
+                  </div>
+                </li>
+		<li><a id="na3" href="https://piazza.com/class/k5j2k0fnzj91vh">Piazza <i class="fas fa-external-link-alt"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  <div class="parallax-window" data-parallax="scroll" data-image-src="img/127background2.jpg" data-speed="0.1">
+    <div class='container'>
+      <div class="main-container">
+<!-- Maintained by Berkeley's ee127 staff-->
+
+<div class='row'>
+  <h1><b>EECS 127/227A</b> | Optimization Models in Engineering</h1>
+  <h2>Spring 2020</h2>
+</div>
+
+<div class='row'>
+  <a class="anchor" id="schedule"></a>
+  <h2>Schedule</h2>
+  <b>This schedule is tentative and subject to change.</b>
+  <br/>
+  (Please scroll horizontally if you're viewing this on your phone.)
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped table-hover">
+      <thead>
+        <tr>
+          <th class='col-md-1 center'><b>Week</b></th>
+          <th class='col-md-1'><b>Date</b></th>
+          <th class='col-md-3'><b>Lecture Topic</b></th>
+	  <th class='col-md-2'><b>Reading</b></th>
+          <th class='col-md-2'><b>Section</b></th>
+          <th class='col-md-3'><b>Homework</b></th>
+        </tr>
+      </thead>
+      <tbody id='wk0'>
+        <tr>
+          <td rowspan="2" class="center">
+            0<br/>
+          </td>
+          <td class="center">
+            01/21 Tu
+          </td>
+          <td>
+            Introduction
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "lecture/week0/01-21-20-Notes.pdf">Notes</a>)
+
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "lecture/week0/01-21-20-Slides.pdf">Slides</a>)
+
+          </td>
+	  <td>
+	    C and EG Ch. 1
+	  </td>
+          <td rowspan="2" class="center">
+                Section 0
+              <br/>
+
+
+                (<a rel="noopener noreferrer" target="_blank" href="discussion/sec0/dis0.pdf">Dis</a>)
+
+                (<a rel="noopener noreferrer" target="_blank" href="discussion/sec0/sol0.pdf">Sol</a>)
+
+                (<a rel="noopener noreferrer" target="_blank" href="discussion/week1/laura-vignesh.pdf">Laura/Vignesh Slides</a>)
+
+
+          </td>
+          <td rowspan="2" class="center">
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            01/23 Th
+          </td>
+          <td>
+            Least-squares/linear algebra review
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "lecture/week0/01-23-20-Notes.pdf">Notes</a>)
+
+          </td>
+	  <td>
+	    C and EG Ch. 2, 3
+	  </td>
+        </tr>
+      </tbody>
+      <tbody id='wk1'>
+        <tr>
+          <td rowspan="2" class="center">
+            1<br/>
+          </td>
+          <td class="center">
+            01/28 Tu
+          </td>
+          <td>
+            Linear algebra review: PCA and symmetric matrices
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "lecture/week1/01-28-20-Notes.pdf">Notes</a>)
+
+          </td>
+	  <td>
+	    C and EG Ch. 4
+	  </td>
+          <td rowspan="2" class="center">
+                Section 1
+              <br/>
+
+
+                (<a rel="noopener noreferrer" target="_blank" href="discussion/sec1/dis1.pdf">Dis</a>)
+
+                (<a rel="noopener noreferrer" target="_blank" href="discussion/sec1/sol1.pdf">Sol</a>)
+
+
+          </td>
+          <td rowspan="2" class="center">
+              Homework 1
+              <br/><i>Due 01/31 Fr</i>
+                <br/>(<a rel="noopener noreferrer" target="_blank" href = "homework/prob1.pdf">PDF</a>)
+              <br/><i>Self grades Due 02/07 Fr</i>
+                <br/>(<a rel="noopener noreferrer" target="_blank" href = "homework/sol1.pdf">Sols</a>)
+                <br/>(<a rel="noopener noreferrer" target="_blank" href = "self-grade-1.html">Self Grade</a>)
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            01/30 Th
+          </td>
+          <td>
+            Singular value decomposition
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "lecture/week1/01-30-20-Notes.pdf">Notes</a>)
+
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "lecture/week1/01-30-20-Notebook.ipynb" download>Notebook</a>)
+
+          </td>
+	  <td>
+	    C and EG Ch. 5
+	  </td>
+        </tr>
+      </tbody>
+      <tbody id='wk2'>
+        <tr>
+          <td rowspan="2" class="center">
+            2<br/>
+          </td>
+          <td class="center">
+            02/04 Tu
+          </td>
+          <td>
+            Low-rank approximation
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "lecture/week2/02-04-20-Notes.pdf">Notes</a>)
+
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "lecture/week2/02-04-20-MinNorm-Notes.pdf">Extended notes on Minimum Norm and Low-Rank Approximation</a>)
+
+          </td>
+	  <td>
+	    C and EG Sec 5.3. Also https://en.wikipedia.org/wiki/Low-rank_approximation.
+	  </td>
+          <td rowspan="2" class="center">
+                Section 2
+              <br/>
+
+
+                (<a rel="noopener noreferrer" target="_blank" href="discussion/sec2/dis2.pdf">Dis</a>)
+
+                (<a rel="noopener noreferrer" target="_blank" href="discussion/sec2/sol2.pdf">Sol</a>)
+
+
+          </td>
+          <td rowspan="2" class="center">
+              Homework 2
+              <br/><i>Due 02/07 Fr</i>
+                <br/>(<a rel="noopener noreferrer" target="_blank" href = "homework/prob2.pdf">PDF</a>)
+                (<a href = "homework/prob2.zip" download>Code</a>)
+              <br/><i>Self grades Due 02/14 Fr</i>
+                <br/>(<a rel="noopener noreferrer" target="_blank" href = "homework/sol2.pdf">Sols</a>)
+                  (<a href = "homework/sol2.zip" download="sol2.zip">Code Sols</a>)
+                <br/>(<a rel="noopener noreferrer" target="_blank" href = "self-grade-2.html">Self Grade</a>)
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            02/06 Th
+          </td>
+          <td>
+            Vector calculus
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "lecture/week2/02-06-20-Notes.pdf">Notes</a>)
+
+          </td>
+	  <td>
+	    B and V Appendix A4
+	  </td>
+        </tr>
+      </tbody>
+      <tbody id='wk3'>
+        <tr>
+          <td rowspan="2" class="center">
+            3<br/>
+          </td>
+          <td class="center">
+            02/11 Tu
+          </td>
+          <td>
+            Low-rank approximation
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "lecture/week3/02-11-20-Notes.pdf">Notes</a>)
+
+          </td>
+	  <td>
+	    C and EG Sec 5.3. Also https://en.wikipedia.org/wiki/Low-rank_approximation.
+	  </td>
+          <td rowspan="2" class="center">
+                Section 3
+              <br/>
+
+
+                (<a rel="noopener noreferrer" target="_blank" href="discussion/sec3/dis3.pdf">Dis</a>)
+
+                (<a rel="noopener noreferrer" target="_blank" href="discussion/sec3/sol3.pdf">Sol</a>)
+
+
+          </td>
+          <td rowspan="2" class="center">
+              Homework 3
+              <br/><i>Due 02/14 Fr</i>
+                <br/>(<a rel="noopener noreferrer" target="_blank" href = "homework/prob3.pdf">PDF</a>)
+                (<a href = "homework/prob3.zip" download>Code</a>)
+              <br/><i>Self grades Due 02/21 Fr</i>
+                <br/>(<a rel="noopener noreferrer" target="_blank" href = "homework/sol3.pdf">Sols</a>)
+                  (<a href = "homework/sol3.zip" download="sol3.zip">Code Sols</a>)
+                <br/>(<a rel="noopener noreferrer" target="_blank" href = "self-grade-3.html">Self Grade</a>)
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            02/13 Th
+          </td>
+          <td>
+            Least-squares and variants: Ridge regression
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "lecture/week3/02-13-20-Notes.pdf">Notes</a>)
+
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "lecture/week3/02-13-20-Notebook.ipynb" download>Notebook</a>)
+
+          </td>
+	  <td>
+	    C and EG: Ch 6
+	  </td>
+        </tr>
+      </tbody>
+      <tbody id='wk4'>
+        <tr>
+          <td rowspan="2" class="center">
+            4<br/>
+          </td>
+          <td class="center">
+            02/18 Tu
+          </td>
+          <td>
+            Least-squares and variants
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "lecture/week4/02-18-20-Notes.pdf">Notes</a>)
+
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "lecture/week4/02-18-20-Notebook.ipynb" download>Notebook</a>)
+
+          </td>
+	  <td>
+	    C and EG Ch. 8.1-8.3, B and V Ch. 3
+	  </td>
+          <td rowspan="2" class="center">
+                Section 4
+              <br/>
+
+
+                (<a rel="noopener noreferrer" target="_blank" href="discussion/sec4/dis4.pdf">Dis</a>)
+
+                (<a rel="noopener noreferrer" target="_blank" href="discussion/sec4/sol4.pdf">Sol</a>)
+
+
+          </td>
+          <td rowspan="2" class="center">
+              Homework 4
+              <br/><i>Due 02/21 Fr</i>
+                <br/>(<a rel="noopener noreferrer" target="_blank" href = "homework/prob4.pdf">PDF</a>)
+                (<a href = "homework/prob4.zip" download>Code</a>)
+              <br/><i>Self grades Due 02/28 Fr</i>
+                <br/>(<a rel="noopener noreferrer" target="_blank" href = "homework/sol4.pdf">Sols</a>)
+                  (<a href = "homework/sol4.zip" download="sol4.zip">Code Sols</a>)
+                <br/>(<a rel="noopener noreferrer" target="_blank" href = "self-grade-4.html">Self Grade</a>)
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            02/20 Th
+          </td>
+          <td>
+            Convexity
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "lecture/week4/02-20-20-Notes.pdf">Notes</a>)
+
+          </td>
+	  <td>
+	    C and EG: Ch 8.1-8.3, B and V, Ch 4
+	  </td>
+        </tr>
+      </tbody>
+      <tbody id='wk5'>
+        <tr>
+          <td rowspan="2" class="center">
+            5<br/>
+          </td>
+          <td class="center">
+            02/25 Tu
+          </td>
+          <td>
+            Convex optimization
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "lecture/week5/02-25-20-Notes.pdf">Notes</a>)
+
+          </td>
+	  <td>
+	    C and EG Ch. 12.2
+	  </td>
+          <td rowspan="2" class="center">
+                Section 5
+              <br/>
+
+
+                (<a rel="noopener noreferrer" target="_blank" href="discussion/sec5/dis5.pdf">Dis</a>)
+
+                (<a rel="noopener noreferrer" target="_blank" href="discussion/sec5/sol5.pdf">Sol</a>)
+
+
+          </td>
+          <td rowspan="2" class="center">
+              Homework 5
+              <br/><i>Due 02/28 Fr</i>
+                <br/>(<a rel="noopener noreferrer" target="_blank" href = "homework/prob5.pdf">PDF</a>)
+              <br/><i>Self grades Due 03/06 Fr</i>
+                <br/>(<a rel="noopener noreferrer" target="_blank" href = "homework/sol5.pdf">Sols</a>)
+                <br/>(<a rel="noopener noreferrer" target="_blank" href = "self-grade-5.html">Self Grade</a>)
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            02/27 Th
+          </td>
+          <td>
+            Gradient Descent
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "lecture/week5/02-27-20-Notes.pdf">Notes</a>)
+
+          </td>
+	  <td>
+	    C and EG: Ch 12.2
+	  </td>
+        </tr>
+      </tbody>
+      <tbody id='wk6'>
+        <tr>
+          <td rowspan="2" class="center">
+            6<br/>
+          </td>
+          <td class="center">
+            03/03 Tu
+          </td>
+          <td>
+            Weak duality
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "lecture/week6/03-03-20-Notes.pdf">Notes</a>)
+
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "https://www.youtube.com/watch?v&#x3D;HN6d4pAr3YI">Webcast</a>)
+
+          </td>
+	  <td>
+	    C and EG: Ch 8.5, B and V: Ch 5
+	  </td>
+          <td rowspan="2" class="center">
+                Section 6
+              <br/>
+
+
+                (<a rel="noopener noreferrer" target="_blank" href="discussion/sec6/dis6.pdf">Dis</a>)
+
+                (<a rel="noopener noreferrer" target="_blank" href="discussion/sec6/sol6.pdf">Sol</a>)
+
+
+          </td>
+          <td rowspan="2" class="center">
+              Homework 6
+              <br/><i>Due 03/06 Fr</i>
+                <br/>(<a rel="noopener noreferrer" target="_blank" href = "homework/prob6.pdf">PDF</a>)
+              <br/><i>Self grades Due 03/13 Fr</i>
+                <br/>(<a rel="noopener noreferrer" target="_blank" href = "homework/sol6.pdf">Sols</a>)
+                <br/>(<a rel="noopener noreferrer" target="_blank" href = "self-grade-6.html">Self Grade</a>)
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            03/05 Th
+          </td>
+          <td>
+            Strong duality
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "lecture/week6/03-05-20-Notes.pdf">Notes</a>)
+
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "lecture/week6/03-05-20-Notebook.ipynb" download>Notebook</a>)
+
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "https://www.youtube.com/watch?v&#x3D;kTaRv3ZrUA0">Webcast</a>)
+
+          </td>
+	  <td>
+	    C and EG: Ch 8.5, B and V: Ch 5
+	  </td>
+        </tr>
+      </tbody>
+      <tbody id='wk7'>
+        <tr>
+          <td rowspan="2" class="center">
+            7<br/><b><font color="red">Take-Home Midterm 03/12<br/>5:10-7:15pm</font></b>
+          </td>
+          <td class="center">
+            03/10 Tu
+          </td>
+          <td>
+            Least Squares Examples and Variants
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "lecture/week7/03-10-20-Notes.pdf">Notes</a>)
+
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "https://www.youtube.com/watch?v&#x3D;7yQoM8RIHPc">Webcast</a>)
+
+          </td>
+	  <td>
+
+	  </td>
+          <td rowspan="2" class="center">
+                Section 7
+              <br/>
+
+
+                (<a rel="noopener noreferrer" target="_blank" href="discussion/sec7/dis7.pdf">Dis</a>)
+
+                (<a rel="noopener noreferrer" target="_blank" href="discussion/sec7/sol7.pdf">Sol</a>)
+
+                (<a rel="noopener noreferrer" target="_blank" href="https://youtu.be/8LvU7ARJl20">Friday Recording</a>)
+
+
+          </td>
+          <td rowspan="2" class="center">
+              Homework 7
+              <br/><i>Optional</i>
+                <br/>(<a rel="noopener noreferrer" target="_blank" href = "homework/prob7.pdf">PDF</a>)
+
+                <br/>(<a rel="noopener noreferrer" target="_blank" href = "homework/sol7.pdf">Sols</a>)
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            03/12 Th
+          </td>
+          <td>
+            Midterm
+            <br/>
+
+                  (<a rel="noopener noreferrer" target="_blank" href = "lecture/week7/exam-template.pdf">Exam Answer Template</a>)
+
+          </td>
+	  <td>
+
+	  </td>
+        </tr>
+      </tbody>
+      <tbody id='wk8'>
+        <tr>
+          <td rowspan="2" class="center">
+            8<br/>
+          </td>
+          <td class="center">
+            03/17 Tu
+          </td>
+          <td>
+            LASSO (L1) – duality + coordinate descent
+            <br/>
+          </td>
+	  <td>
+
+	  </td>
+          <td rowspan="2" class="center">
+                Section 8
+              <br/>
+
+
+          </td>
+          <td rowspan="2" class="center">
+              Homework 8
+              <br/><i>Due 03/20 Fr</i>
+                <br/>(<a rel="noopener noreferrer" target="_blank" href = "homework/prob8.pdf">PDF</a>)
+
+                <br/>(<a rel="noopener noreferrer" target="_blank" href = "self-grade-8.html">Self Grade</a>)
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            03/19 Th
+          </td>
+          <td>
+            LPs
+            <br/>
+          </td>
+	  <td>
+
+	  </td>
+        </tr>
+      </tbody>
+      <tbody id='wk9'>
+        <tr>
+          <td rowspan="1" class="center">
+            9<br/>
+          </td>
+          <td class="center">
+
+          </td>
+          <td>
+            Spring Break!
+            <br/>
+          </td>
+	  <td>
+
+	  </td>
+          <td rowspan="1" class="center">
+          </td>
+          <td rowspan="1" class="center">
+
+
+          </td>
+        </tr>
+      </tbody>
+      <tbody id='wk10'>
+        <tr>
+          <td rowspan="2" class="center">
+            10<br/>
+          </td>
+          <td class="center">
+            03/31 Tu
+          </td>
+          <td>
+            Buffer
+            <br/>
+          </td>
+	  <td>
+
+	  </td>
+          <td rowspan="2" class="center">
+                Section 10
+              <br/>
+
+
+          </td>
+          <td rowspan="2" class="center">
+              Homework 10
+
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            04/02 Th
+          </td>
+          <td>
+            QPs and SOCPs
+            <br/>
+          </td>
+	  <td>
+
+	  </td>
+        </tr>
+      </tbody>
+      <tbody id='wk11'>
+        <tr>
+          <td rowspan="2" class="center">
+            11<br/>
+          </td>
+          <td class="center">
+            04/07 Tu
+          </td>
+          <td>
+            SVM
+            <br/>
+          </td>
+	  <td>
+
+	  </td>
+          <td rowspan="2" class="center">
+                Section 11
+              <br/>
+
+
+          </td>
+          <td rowspan="2" class="center">
+              Homework 11
+
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            04/09 Th
+          </td>
+          <td>
+            SVM
+            <br/>
+          </td>
+	  <td>
+
+	  </td>
+        </tr>
+      </tbody>
+      <tbody id='wk12'>
+        <tr>
+          <td rowspan="2" class="center">
+            12<br/>
+          </td>
+          <td class="center">
+            04/14 Tu
+          </td>
+          <td>
+            LQR, control
+            <br/>
+          </td>
+	  <td>
+
+	  </td>
+          <td rowspan="2" class="center">
+                Section 12
+              <br/>
+
+
+          </td>
+          <td rowspan="2" class="center">
+              Homework 12
+
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            04/16 Th
+          </td>
+          <td>
+            Online-Convex optimization
+            <br/>
+          </td>
+	  <td>
+
+	  </td>
+        </tr>
+      </tbody>
+      <tbody id='wk13'>
+        <tr>
+          <td rowspan="2" class="center">
+            13<br/>
+          </td>
+          <td class="center">
+            04/21 Tu
+          </td>
+          <td>
+            SGD
+            <br/>
+          </td>
+	  <td>
+
+	  </td>
+          <td rowspan="2" class="center">
+                Section 13
+              <br/>
+
+
+          </td>
+          <td rowspan="2" class="center">
+              Homework 13
+
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            04/23 Th
+          </td>
+          <td>
+            TBD
+            <br/>
+          </td>
+	  <td>
+
+	  </td>
+        </tr>
+      </tbody>
+      <tbody id='wk14'>
+        <tr>
+          <td rowspan="2" class="center">
+            14<br/>
+          </td>
+          <td class="center">
+            04/28 Tu
+          </td>
+          <td>
+            TBD
+            <br/>
+          </td>
+	  <td>
+
+	  </td>
+          <td rowspan="2" class="center">
+                Section 14
+              <br/>
+
+
+          </td>
+          <td rowspan="2" class="center">
+              Homework 14
+
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            04/30 Th
+          </td>
+          <td>
+            TBD
+            <br/>
+          </td>
+	  <td>
+
+	  </td>
+        </tr>
+      </tbody>
+      <tbody id='wk15'>
+        <tr>
+          <td rowspan="2" class="center">
+            15<br/>
+          </td>
+          <td class="center">
+            05/05 Tu
+          </td>
+          <td>
+
+            <br/>
+          </td>
+	  <td>
+
+	  </td>
+          <td rowspan="2" class="center">
+          </td>
+          <td rowspan="2" class="center">
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="center">
+            05/07 Th
+          </td>
+          <td>
+
+            <br/>
+          </td>
+	  <td>
+
+	  </td>
+        </tr>
+      </tbody>
+      <tbody id='wk16'>
+        <tr>
+          <td rowspan="1" class="center">
+            16<br/>
+          </td>
+          <td class="center">
+            05/15 Fr
+          </td>
+          <td>
+            Final Exam 11:30am-2:30pm
+            <br/>
+          </td>
+	  <td>
+
+	  </td>
+          <td rowspan="1" class="center">
+                Section 16
+              <br/>
+
+
+          </td>
+          <td rowspan="1" class="center">
+
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script src="highlightCalendar.js"></script>
+<div class='row'>
+  <a class="anchor" id="google-calendar"></a>
+  <h2>Calendar</h2>
+  <div class="scrollable">
+    <iframe src="https://calendar.google.com/calendar/embed?title=EECS 127/227A%20Calendar&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ee127227sp20@gmail.com&amp;color=%234E5D6C&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+  </div>
+</div>
+<a class="anchor" id="staff"></a>
+<h2>Course Staff</h2>
+<h3>Instructors</h3>
+<div class='row'>
+  <div class='center col-md-4 col-sm-4 col-xs-6 bottomspace'>
+    <a target="_blank" class='img-link' href="http://www2.eecs.berkeley.edu/Faculty/Homepages/gireeja.html"><img class='headshot img-circle' src='photos-instructor/GireejaRanade.jpg'/></a>
+    <br/>
+    <strong><a target="_blank" href="http://www2.eecs.berkeley.edu/Faculty/Homepages/gireeja.html">Gireeja Ranade</a></strong><br/>
+
+    ranade@eecs.
+  </div>
+</div>
+
+<h3>GSIs</h3>
+<div class='row'>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+        <img class='headshot img-circle' src='photos-gsi/GraceZhang.jpg' onmouseover='this.src="photos-gsi/GraceZhangCool.jpg"' onmouseout='this.src="photos-gsi/GraceZhang.jpg"'/>
+    <br/>
+    <b>Grace Zhang</b><br/>
+    Admin Head / Discussion TA<br/>
+    grace.zhang@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+        <img class='headshot img-circle' src='photos-gsi/SuvanshSanjeev.jpg' onmouseover='this.src="photos-gsi/SuvanshSanjeevWild.jpg"' onmouseout='this.src="photos-gsi/SuvanshSanjeev.jpg"'/>
+    <br/>
+    <b>Suvansh Sanjeev</b><br/>
+    Admin Head / Discussion TA<br/>
+    suvansh@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+        <img class='headshot img-circle' src='photos-gsi/VigneshSubramanian.jpg'/>
+    <br/>
+    <b>Vignesh Subramanian</b><br/>
+    Content Head / Discussion TA<br/>
+    vignesh.subramanian@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+        <img class='headshot img-circle' src='photos-gsi/TheophileCabannes.jpg'/>
+    <br/>
+    <b>Theo Cabannes</b><br/>
+    Content TA<br/>
+    theophile@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+        <img class='headshot img-circle' src='photos-gsi/ArminAskari.jpg' onmouseover='this.src="photos-gsi/YeshwanthCherapanamjeri.jpg"' onmouseout='this.src="photos-gsi/ArminAskari.jpg"'/>
+    <br/>
+    <b>Armin Askari</b><br/>
+    Content TA<br/>
+    aaskari@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+        <img class='headshot img-circle' src='photos-gsi/ElenaJia.jpg'/>
+    <br/>
+    <b>Elena Jia</b><br/>
+    Content TA<br/>
+    yiranjia@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+        <img class='headshot img-circle' src='photos-gsi/WilsonWu.jpg'/>
+    <br/>
+    <b>Wilson Wu</b><br/>
+    Content TA<br/>
+    wilswu@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+        <img class='headshot img-circle' src='photos-gsi/YeshwanthCherapanamjeri.jpg' onmouseover='this.src="photos-gsi/ArminAskari.jpg"' onmouseout='this.src="photos-gsi/YeshwanthCherapanamjeri.jpg"'/>
+    <br/>
+    <b>Yeshwanth Cherapanamjeri</b><br/>
+    Content / Discussion TA<br/>
+    yeshwanth@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+        <img class='headshot img-circle' src='photos-gsi/SeanFarhat.jpg'/>
+    <br/>
+    <b>Sean Farhat</b><br/>
+    Content TA<br/>
+    sfarhat@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+        <img class='headshot img-circle' src='photos-gsi/LauraHallock.jpg' onmouseover='this.src="photos-gsi/LauraHallockCyborg.jpg"' onmouseout='this.src="photos-gsi/LauraHallock.jpg"'/>
+    <br/>
+    <b>Laura Hallock</b><br/>
+    Content / Discussion TA<br/>
+    laura.the.gsi@gmail.com
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+        <img class='headshot img-circle' src='photos-gsi/SampadaDeglurkar.jpg'/>
+    <br/>
+    <b>Sampada Deglurkar</b><br/>
+    Content TA<br/>
+    sampada_deglurkar@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+        <img class='headshot img-circle' src='photos-gsi/DavidYi.jpg'/>
+    <br/>
+    <b>David Yi</b><br/>
+    Reader<br/>
+    dyi@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+        <img class='headshot img-circle' src='photos-gsi/NavneedhMaudgalya.jpg'/>
+    <br/>
+    <b>Navneedh Maudgalya</b><br/>
+    Reader<br/>
+    navneedhm@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+        <img class='headshot img-circle' src='photos-gsi/AnaTudor.jpg'/>
+    <br/>
+    <b>Ana Tudor</b><br/>
+    Reader<br/>
+    anamtudor@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+        <img class='headshot img-circle' src='photos-gsi/MandiZhao.jpg'/>
+    <br/>
+    <b>Mandi Zhao</b><br/>
+    Reader<br/>
+    mandi.zhao@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+        <img class='headshot img-circle' src='photos-gsi/VictorLi.jpg'/>
+    <br/>
+    <b>Victor Li</b><br/>
+    Reader<br/>
+    lytz@
+    </div>
+      <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+        <img class='headshot img-circle' src='photos-gsi/DanielJing.jpg'/>
+    <br/>
+    <b>Daniel Jing</b><br/>
+    Reader<br/>
+    daniel.jing@
+    </div>
+  <div class='col-md-3 center col-sm-4 col-xs-6 bottomspace'>
+    <br/><br/><br/><br/><b>Please add berkeley.edu to the end of all emails, unless otherwise specified.</b>
+  </div>
+</div>
+<div class="row">
+  <a class="anchor" id="resources"></a>
+  <h2>Resources</h2>
+
+  <a target="_blank" href="https://piazza.com/class/k5j2k0fnzj91vh">Piazza:</a> ask questions here.
+
+  <h3>Textbooks</h3>
+  <ul>
+    <li><a target="_blank" href="http://livebooklabs.com/keeppies/c5a5868ce26b8125">Optimization Models in Engineering (Giuseppe Calafiore and Laurent El Ghaoui)</a> </li>
+    <li><a target="_blank" href="https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf">Convex Optimization (Stephen Boyd  and Lieven Vandenberghe)</a> </li>
+  </ul>
+  <h3>Prof. El Ghaoui&#x27;s Slides</h3>
+  <ul>
+    <li><a target="_blank" href="student-resources/127_slides/1_intro.pdf">Introduction</a> </li>
+    <li><a target="_blank" href="student-resources/127_slides/2_vectors.pdf">Vectors</a> </li>
+    <li><a target="_blank" href="student-resources/127_slides/3_matrices.pdf">Matrices</a> </li>
+    <li><a target="_blank" href="student-resources/127_slides/4_matrices2.pdf">Matrices (contd.)</a> </li>
+    <li><a target="_blank" href="student-resources/127_slides/5_sym_evd.pdf">Symmetric Matrices</a> </li>
+    <li><a target="_blank" href="student-resources/127_slides/6_svd.pdf">Singular Value Decomposition</a> </li>
+    <li><a target="_blank" href="student-resources/127_slides/7_lineqs.pdf">Linear Equations</a> </li>
+    <li><a target="_blank" href="student-resources/127_slides/8_ls.pdf">Least Squares and Variants</a> </li>
+    <li><a target="_blank" href="student-resources/127_slides/10_lp.pdf">Linear Programs</a> </li>
+    <li><a target="_blank" href="student-resources/127_slides/11_qp.pdf">Convex Quadratic Programs</a> </li>
+    <li><a target="_blank" href="student-resources/127_slides/13_robopt.pdf">Robust Optimization Models</a> </li>
+    <li><a target="_blank" href="student-resources/127_slides/14_review.pdf">Review: Conic Models</a> </li>
+    <li><a target="_blank" href="student-resources/127_slides/16_convexity.pdf">Convexity</a> </li>
+    <li><a target="_blank" href="student-resources/127_slides/17_cvxprobs.pdf">Convex Optimization Problems</a> </li>
+    <li><a target="_blank" href="student-resources/127_slides/18_duality1.pdf">Weak Duality</a> </li>
+    <li><a target="_blank" href="student-resources/127_slides/19_duality2.pdf">Strong Duality</a> </li>
+    <li><a target="_blank" href="student-resources/127_slides/21_opt_conds.pdf">Optimality Conditions</a> </li>
+  </ul>
+</div>
+<div class="row">
+	<a class="anchor" id="policies"></a>
+<h2>Policies</h2>
+<h3>Course Info</h3>
+<a class="anchor" id="courseInfo"></a>
+<p><b>Course Title:</b> Optimization Models in Engineering</p>
+<p><b>Units</b>: 4</p>
+<p><b>Course Format</b>: 3 hours of lecture, 1 hour discussion</p>
+<p><b>Instructors:</b> Gireeja Ranade</p>
+<p><b>Contact Information:</b> <a href="mailto:ee127227sp20@gmail.com&subject=EECS%20127">ee127227sp20@gmail.com</a>, <a href="mailto:gireeja@eecs.berkeley.edu&subject=EECS%20127">gireeja@eecs.berkeley.edu</a></p>
+<p><b>Prerequisites:</b> EE 16A, EE 16B, CS 70, Math 53</p>
+<p><b>Online resources: </b><a href="https://piazza.com/class/k5j2k0fnzj91vh">Piazza</a>, Gradescope (<b>MYJ5YZ</b>), and course website</p>
+<p><b>Course Description</b></p>
+<p>This course offers an introduction to optimization models and their applications, ranging from machine learning and statistics to decision-making and control, with emphasis on numerically tractable problems, such as linear or constrained least-squares optimization.  (4 Units.)</p>
+<p><b>Course Objectives</b></p>
+<ol>
+    <li>Develop a practical understanding of the applications and limitations of optimization as a solution approach to engineering analysis and design.</li>
+    <li>Develop an ability to use rapid prototyping software to guide optimization solutions.</li>
+</ol>
+<p> </p>
+<p><b>Desired Course Outcome:</b></p>
+<p>By the end of the term, students having taken <b>Optimization Models in Engineering </b>are expected to be able to:</p>
+<ol>
+    <li>Understand the basic concepts of linear algebra: vectors, matrices, rank, projections; symmetric matrices, positive semidefinite matrices, eigenvalues; singular value decomposition and principal component analysis.</li>
+    <li>Understand three basic optimization models: least-squares, linear programming, and quadratic programming; and develop an understanding of the more general convex optimization.</li>
+    <li>Be aware of the wide-ranging applications where optimization models are useful, including in machine learning applications.</li>
+    <li>Be able to use prototyping software such as CVX to develop optimization-based solutions in concrete applications.</li>
+</ol>
+<p> </p>
+<h3>Course Content</h3>
+<a class="anchor" id="content"></a>
+<p>The course content will roughly follow the outline posted on the website, but is subject to change and evolve throughout the semester. </p>
+<ol>
+    <li>Eigenvalue and singular value decomposition</li>
+    <li>Linear equations</li>
+    <li>Least squares</li>
+    <li>Convexity</li>
+    <li>Gradient descent</li>
+    <li>Linear programming</li>
+    <li>Quadratic programming</li>
+    <li>Duality</li>
+    <li>Optimality conditions</li>
+    <li>Applications: machine learning</li>
+    <li>Applications: control</li>
+</ol>
+<p>Some application topics might be added mid-semester. It is strongly recommended that the students use the book  <i>Optimization Models</i>, G.C. Calafiore and L. El Ghaoui, Cambridge University Press, October 2014.</p>
+<h3>Discussion</h3>
+<a class="anchor" id="discussion"></a>
+<p>Discussion sections will take place every week. You may attend any one of the following sections, the material here is intended to help you with the class. You are strongly encouraged to attend and ask questions. Discussions will begin on <b>Friday January 24, 2020</b>. Discussion frequency and policy is as follows: </p>
+<ul>
+	<li><b>Monday</b><b> 10:00am - 11:00pm</b>, McCone 141, TA: Yeshwanth</li>
+	<li><b>Monday 3:00pm - 4:00pm</b>, Tan 180, TA: Grace</li>
+	<li><b>Monday 4:00pm - 5:00pm</b>, Etcheverry 3106, TA: Suvansh</li>
+	<li><b>Friday 11:00pm - 12:00pm</b>, Goldman School 150, TA: Theo</li>
+	<li><b>Friday 2:00pm - 3:00pm</b>, Barrows 126, TA: Laura/Vignesh</li>
+	<li><b>Friday 3:00pm - 4:00pm</b>, Barrows 20, TA: Laura/Vignesh</li>
+</ul>
+<p>Discussion material will be released on Friday.</p>
+<p>Solutions to the discussion material will be released on Monday after the last discussion of the week. Please also see our link to <a href="https://calendar.google.com/calendar/b/5?cid=ZWUxMjcyMjdzcDIwQGdtYWlsLmNvbQ">Google Calendar</a>.</p>
+<h3>Homework</h3>
+<a class="anchor" id="homework"></a>
+<p>Homework will be assigned every Friday <a href="#schedule">here</a> on the website and will be due the following Friday at 11:00pm. Homework will be electronically submitted to Gradescope (entry code: <b>MYJ5YZ</b>) as follows:</p>
+<ol>
+<li>A single PDF consisting of the following components:</li>
+<ol>
+    <li>Scanned handwritten work or a LaTeX file containing answers to non IPython questions </li>
+    <li>A PDF of all iPython notebooks</li>
+</ol>
+<li>All IPython notebooks in .ipynb format</li>
+</ol>
+
+<p>You will need to select the pages associated with each question through Gradescope. Late homework will not be accepted, but to account for the vicissitudes of life, we will drop the 2 lowest homework scores from the final grade calculation.</p>
+<p>Discussion and collaboration, as opposed to copying, of homework is encouraged. In other words, you are encouraged to discuss the homework with your classmates but you must write your own derivations and do your own calculations, etc. Do not hesitate to ask the professor or the GSIs for clarifications and hints for the homework problems during Homework Parties and Office hours. We encourage cooperation rather than competition.</p>
+<h4>Homework Grading</h4>
+<p>The point of homework in this class is for you to learn the material. To help you in doing this each student will grade their own homework in addition to being graded by readers.</p>
+<h5>Self Grades How-To</h5>
+<p>After the HW deadline, official solutions will be posted online. You will then be expected to read them and enter your own scores and comments for every part of every problem in the homework on a simple coarse scale.</p>
+<p>0 = didn't attempt or very very wrong, </p>
+<p>2 = got started and made some progress, but went off in the wrong direction or with no clear direction, </p>
+<p>5 = right direction and got half-way there, </p>
+<p>8 = mostly right but a minor thing missing or wrong, </p>
+<p>10 = 100% correct.</p>
+<p>Note: You must justify self-grades of 2, 5 or 8 with a comment. Grades of 0 and 10 do not need to be justified. If you are really confused about how to grade a particular problem, you should post on Piazza. This is not supposed to be a stressful process. See <a href="https://youtu.be/dljSARqPXVA" target="_blank">this video</a> for a walkthrough of the self-grade process.</p>
+<p>Course readers are going to be grading and sending you occasional comments. Because we have reader grades, we will catch any attempts at trying to inflate your own scores. This will be considered cheating and is definitely not worth the risk. Your own scores will be used in computing your final grade for the course, adjusted by taking into account reader scores so that everyone is fairly graded effectively on the same scale. For example, if we notice that you tend to give yourself 5s on questions where readers looking at your homeworks tend to give you 8s, we will apply an upward correction to adjust.</p>
+<p>You can find the link to the self grade form (where you will enter these scores) on the website next to the solutions. After completing a self grade form, it will generate a formatted .txt file with your responses. Download this file and submit it to Gradescope. There will be an assignment “HW X Self Grade” on Gradescope that you should submit this to. After uploading, make sure the autograder matches the scores you gave yourself in the self grade form. <b><u>Your self-grades will be due on the following Friday after the homework deadline at 11:00 PM sharp. We will accept late self-grades up to 25 hours late (Saturday 11:59PM) for a 10% penalty on the associated homework assignment.</u></b> If you don't enter a proper grade by this deadline, you are giving yourself a zero on that assignment. Merely doing the homework is not enough, you must do the homework; turn it in on time; read the solutions; do the self-grade; and turn it in on time. <b><u>Unless all of these steps are done, you will get a zero for that assignment.</b></u></p>
+<h3>Exam Policies</h3>
+<a class="anchor" id="exams"></a>
+<p>The 127/227AT Spring 2020 semester will have one midterm and one final. The midterm time will be during class hours and date will be communicated in class. Current schedule (below) is TENTATIVE. The final will be held during the designated final exam slot released by campus. <b>Makeup/alternate exams will not be scheduled under any circumstances.</b></p>
+<p>Please plan for exams at these times and <b><a href="mailto:ee127227sp20@gmail.com,ranade@eecs.berkeley.edu?subject=EECS%20127%20Exam%20Conflict">email us</a> during the first two weeks of the semester per university policy if you know about any exam conflicts.</b> If an emergency arises that conflicts with the exam times, email us as soon as possible at ee127227sp20@gmail.com. Emergency exam conflicts will be handled on a case-by-case basis. We do not provide specific accommodations for conflict with other classes, conflict with personal activities, even planned in advance, extracurricular or not. We try to accommodate situations of personal hardship to the best of our abilities. <b>If you skip an exam without coordinating with us beforehand, you will receive an automatic zero</b>.</p>
+<h3>Grading Breakdown</h3>
+<a class="anchor" id="gradeBreak"></a>
+<p>The course grade will be based on the following evaluation:</p>
+<ul>
+	<li>Homework (30%)</li>
+	<li>Midterm (30%)</li>
+	<li>Final (40%)</li>
+</ul>
+<p>There will also be a project option.  If you choose to do the project, we will calculate the following breakdown:</p>
+<ul>
+	<li>Homework (30%)</li>
+	<li>Project (10%)</li>
+	<li>Midterm (25%)</li>
+	<li>Final (35%)</li>
+</ul>
+<p>Your final grade will be the maximum of the two grading schemes.</p>
+<p>This policy rewards consistency and regular work, as well as final knowledge acquisition. </p>
+<p><b>Redemption policy: </b>Exams cover all material until the exam. Grade of midterm will be replaced with a weighted average of the final and midterm grade if it is higher: </p>
+<ul class="small">
+    <li>Clobbered midterm grade = max(midterm grade, 60% final grade + 40% midterm grade)</li>
+</ul>
+</ul>
+<h3>DSP</h3>
+<a class="anchor" id="dsp"></a>
+<p>We are happy to accommodate students with special needs as determined by the DSP office. Please <a href="mailto:ee127227sp20@gmail.com,ranade@eecs.berkeley.edu?subject=DSP%20Accommodations Letter">email us</a> in the first two weeks of class to request appropriate accommodations. Please include your accommodation letter in this email.</p>
+
+<h3>Course Materials</h3>
+<a class="anchor" id="courseMaterials"></a>
+<p>RECOMMENDED:</p>
+<ol>
+    <li>Calafiore, Giuseppe and El Ghaoui, Laurent. <i>Optimization Models</i>.</li>
+    <li>Boyd, Stephen, and Lieven Vandenberghe. <i><a href="https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf">Convex optimization</a></i>. Cambridge university press, 2004.</li>
+    <li><a href="http://livebooklabs.com/keeppies/c5a5868ce26b8125">Livebook</a> (You can register on thelivebook platform for free)</li>
+</ol>
+
+<h3>Course Communication</h3>
+<a class="anchor" id="communication"></a>
+<p><b>The instructors and TAs will post announcements, clarifications, hints, etc. on </b><a href="https://piazza.com/class/k5j2k0fnzj91vh">Piazza</a>. You must check the EECS127/227A Piazza page frequently throughout the term.</p>
+<p>If you have a question, your best option is to post a message there. The staff will check the forum regularly, and other students will be able to help you too. When using the forum, please avoid off-topic discussions, and please <b>do not post answers to homework questions before the homework is due</b>. Also, always look for a convenient category to post the question to (for example, each homework will have its own category, so please post there). That will ensure you get the answer faster.</p>
+<p>If your question is personal or not of interest to other students, you may mark your question as private on Piazza, so only the instructors will see it. If you wish to talk with one of us individually, you are also welcome to come to our office hours. Please reserve email for the questions you can't get answered in office hours, in discussion sections, or through the forum.</p>
+<p>It can be challenging for the instructors to gauge how smoothly the class is going. We always welcome any feedback on what we could be doing better. <b>If you would like to send any feedback, you can send an email to:</b> <a href="mailto:ee127227sp20@gmail.com?subject=EECS%20127%20Class%20Feedback">eecs127staff@gmail.com</a></p>
+<h3>Collaboration</h3>
+<a class="anchor" id="collaboration"></a>
+<p>We encourage you to work on homework problems in study groups of two to four people; however, you must <b>always </b>write up the solutions on your own. Similarly, you may use books or online resources to help solve homework problems, but you must always credit all such sources in your writeup, and you may never copy material verbatim. <b>Using previous homework and exam solutions is strictly prohibited, and will be considered academic dishonesty. This is not how you want to start your career as an engineer.</b></p>
+<p>We expect that most students can distinguish between helping other students and cheating. Explaining the meaning of a question, discussing a way of approaching a solution, or collaboratively exploring how to solve a problem within your group is an interaction that we encourage strongly. But you should write your homework solution strictly by yourself so that your hands and eyes can help you internalize the subject matter. You should acknowledge everyone whom you have worked with, or who has given you any significant ideas about the homework. This is good scholarly conduct.</p>
+<h3>Don't Be Afraid to Ask for Help</h3>
+<a class="anchor" id="help"></a>
+<p>Are you struggling? Please come talk with us! The earlier we learn about your struggles, the more likely it is that we can help you. Waiting until right before an exam or the last few weeks of the semester to let us know about your problems is not an effective strategy - the later it is, the less we will be able to help you.</p>
+<p>Even if you are convinced that you are the only person in the class who is struggling, please overcome any feelings of embarrassment or guilt, and come ask for help as soon as you need it – we can almost guarantee you're not the only person who feels this way. Don't hesitate to ask us for help – we really do care that you thrive!</p>
+<h3>Advice</h3>
+<a class="anchor" id="advice"></a>
+<p>The following tips are offered based on our experience.</p>
+<p><b>Do the homework! </b>The homework is explicitly designed to help you to learn the material as you go along. There is usually a strong correlation between homework scores and final grades in the class.</p>
+<p><b>Keep up with lectures! </b>Discussion sections, labs and homework all touch on portions of what we discuss in lecture. <b>Students do much better if they stay on track with the course.</b> That will also help you keep the pace with your homework and study group.</p>
+<p><b>Take part to discussion sections! </b>Discussion sections are not auxiliary lectures. They are an opportunity for interactive learning. The success of a discussion section depends largely on the willingness of students to participate actively in it. As with office hours, the better prepared you are for the discussion, the more you are likely to benefit from it.</p>
+<p><b>Come to office hours! </b>We love to talk to you and do a deep dive to help you understand the material better.</p>
+<p><b>Form study groups!</b> As stated above, you are encouraged to form small groups (two to four people) to work together on homework and on understanding the class material on a regular basis. In addition to being fun, this can save you a lot of time by generating ideas quickly and preventing you from getting hung up on some point or other. Of course, it is your responsibility to ensure that you contribute actively to the group; passive listening will likely not help you much. Also recall the caveat above, that you must write up your solutions on your own. We strongly advise you to spend some time on your own thinking about each problem before you meet with your study partners; this way, you will be in a position to compare ideas with your partners, and it will get you in practice for the exams. <b>Make sure you work through all problems yourself</b>, and that your final write-up is your own. Some groups try to split up the problems ("you do Problem 1, I'll do Problem 2, then we'll swap notes"); not only is this a punishable violation of our collaboration policies, it also ensures you will learn a lot less from this course.</p>
+    </div>
+  </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="bootstrap-dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/parallax.min.js"></script>
+
+  </body>
+</html>
