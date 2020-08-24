@@ -12,16 +12,16 @@ var data = [
     label: "Homework"
   },
   {
-    value: "30",
+    value: "42",
     color: colors[1],
     highlight: highlights[1],
-    label: "Midterm"
+    label: "max(Midterm; Final)"
   },
   {
-    value: "40",
+    value: "28",
     color: colors[2],
     highlight: highlights[2],
-    label: "Final"
+    label: "min(Midterm; Final)"
   }
 ]
 var ctx = document.getElementById("gradeBreakdown").getContext("2d");
